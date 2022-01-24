@@ -1,0 +1,24 @@
+.white {
+	color:$white;
+}
+.white2 {
+	color: $white2;
+}
+.grey-lite {
+	color: $grey-lite;
+	&::placeholder {
+		color: $grey-lite;
+	}
+}
+.purple1 {
+	color: $purple;
+}
+.purple2 {
+	color: $purple2;
+}
+.purple3 {
+	color: $purple3;
+}
+.green {
+	color: $green;
+}

@@ -1,0 +1,70 @@
+.pointer {
+	position: relative;
+	cursor: pointer;
+	&::after {
+		content: "";
+		position: absolute;
+		top: 30%;
+		right: 1%;
+		transform: rotate(-45deg);
+		border-bottom: 2px solid $greey;
+		border-left: 2px solid $greey;
+		box-sizing: border-box;
+		width: 10px;
+		height: 10px;
+		display: block;
+		margin-left: 50px;
+		transition: all 0.2s linear;
+	}
+	&.active::after {
+		transform: rotate(135deg);
+	}
+}
+@media screen and (max-width: 1024px) {
+	.pointer-A {
+		position: relative;
+		cursor: pointer;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 30%;
+			right: 1%;
+			transform: rotate(-45deg);
+			border-bottom: 2px solid $greey;
+			border-left: 2px solid $greey;
+			box-sizing: border-box;
+			width: 10px;
+			height: 10px;
+			display: block;
+			margin-left: 50px;
+			transition: all 0.2s linear;
+		}
+		&.active::after {
+			transform: rotate(135deg);
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	.pointer-B {
+		position: relative;
+		cursor: pointer;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 30%;
+			right: 1%;
+			transform: rotate(-45deg);
+			border-bottom: 2px solid $blue;
+			border-left: 2px solid $blue;
+			box-sizing: border-box;
+			width: 10px;
+			height: 10px;
+			display: block;
+			margin-left: 50px;
+			transition: all 0.2s linear;
+		}
+		&.active::after {
+			transform: rotate(135deg);
+		}
+	}
+}

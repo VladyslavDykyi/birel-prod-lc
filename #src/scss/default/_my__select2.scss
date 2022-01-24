@@ -1,0 +1,55 @@
+.select2-container--default .select2-selection--single {
+	background-color: $white;
+	border: 1px solid $greey;
+	box-sizing: border-box;
+	padding: 10px 20px 10px 10px;
+	height: 40px;
+	border-radius: 0px;
+	transition: all 0.2s linear;
+	&:hover {
+		border: 1px solid $lite-blue;
+	}
+	&:focus {
+		border: 1px solid $lite-blue;
+	}
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+	height: 40px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+	font-family: $R-r;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: $greey;
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+	border-color: #888 #888 transparent transparent;
+	border-style: solid;
+	border-width: 2px 2px 0px 0px;
+	left: 50%;
+	transition: all 0.2s linear;
+	transform: rotate(135deg);
+	margin-left: -4px;
+	margin-top: -6px;
+	position: absolute;
+	top: 50%;
+	height: 5px;
+	width: 5px;
+}
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+	border-color: transparent transparent #888 #888;
+	border-width: 0px 0px 2px 2px;
+}
+.select2-results__option {
+	font-family: $R-r;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: $greey;
+	padding: 3px 6px;
+}

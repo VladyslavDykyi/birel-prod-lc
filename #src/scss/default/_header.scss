@@ -1,0 +1,70 @@
+.header {
+	background-color: $purple;
+	padding: 30px 0;
+	width: 100vw;
+	position: fixed;
+	&-box {
+		display: flex;
+		align-items: center;
+	}
+	&-logo {
+	
+	}
+	&-list {
+		display: flex;
+		align-items: center;
+		&-item {
+			& a {
+				position: relative;
+				display: block;
+				& i {
+					display: block;
+					width: 30px;
+					height: 30px;
+				}
+			}
+		}
+	}
+	&-user {
+		display: flex;
+		align-items: center;
+		&-avatar {
+			& .avatar {
+			
+			}
+		}
+		&-menu {
+			& .btn-menu {
+			
+			}
+			& .menu-box {
+			
+			}
+			& .menu-list {
+				&-item {
+				
+				}
+			}
+		}
+	}
+}
+.counter {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 24px;
+	height: 24px;
+	background: #1BC082;
+	border: 1px solid #F6F4FF;
+	box-sizing: border-box;
+	border-radius: 50%;
+	font-family: $WS-m;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #FFFFFF;
+}

@@ -1,0 +1,76 @@
+.paginations {
+	display: flex;
+	align-items: center;
+	@media screen and (max-width: 580px) {
+		margin-bottom: 15px;
+	}
+	&-box {
+		display: flex;
+		align-items: center;
+		&__item {
+			font-family: $R-r;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 16px;
+			text-align: center;
+			color: $dark-green;
+			width: 32px;
+			height: 32px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: $white;
+			margin-right: 5px;
+			transition: all 0.2s linear;
+			cursor: pointer;
+			&:hover {
+				background: $blue;
+				color: $white;
+			}
+			&.active {
+				background: $blue;
+				color: $white;
+				cursor: auto;
+			}
+		}
+	}
+	& .arrow {
+		border: none;
+		outline: none;
+		cursor: pointer;
+		box-sizing: border-box;
+		display: block;
+		width: 10px;
+		height: 10px;
+		border-top: 1px solid $dark-green;
+		border-left: 1px solid $dark-green;
+		padding: 0;
+		background-color: $white;
+	}
+	& .arrow-l {
+		margin-left: 10px;
+		margin-right: 30px;
+		transform: rotate(-45deg);
+		@media screen and (max-width: 580px) {
+			margin-right: 10px;
+		}
+		@media screen and (max-width: 425px) {
+			margin-right: 22px;
+		}
+		&:hover {
+			transform: scale(1.1) rotate(-45deg);
+		}
+		&:focus {
+			transform: scale(0.9) rotate(-45deg);
+		}
+	}
+	& .arrow-r {
+		transform: rotate(135deg);
+		&:hover {
+			transform: scale(1.1) rotate(135deg);
+		}
+		&:focus {
+			transform: scale(0.9) rotate(135deg);
+		}
+	}
+}

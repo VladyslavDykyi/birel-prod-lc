@@ -1,0 +1,71 @@
+.tovar-nav__wrap-img {
+	max-width: 73px;
+	background: #fff;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	@media screen and (max-width: 768px) {
+		max-width: 73px;
+	}
+}
+.tovar-nav__item {
+	height: 70px;
+	width: 70px;
+	margin-bottom: 10px;
+	@media screen and (max-width: 768px) {
+		min-width: 72px !important;
+		width: 72px !important;
+	}
+}
+.tovar-nav {
+	& div.slick-list div.slick-track div.slick-slide.slick-cloned {
+		margin-bottom: 10px;
+	}
+}
+.tovar-nav {
+	& div div div.slick-current div div div.tovar-nav__wrap-img {
+		border: 1px solid #307fdd;
+		box-sizing: border-box;
+		box-shadow: 0px 2px 5px rgba(51, 51, 51, 0.25);
+	}
+}
+.tovar-nav__wrap-img img {
+	height: 70px;
+	width: 70px;
+	object-fit: contain;
+}
+.tovar-nav {
+	max-width: 80px;
+	width: 100%;
+	overflow: hidden;
+	@media screen and (max-width: 768px) {
+		max-width: inherit;
+		width: 100%;
+	}
+}
+.tovar-for {
+	max-width: 360px;
+	width: 100%;
+	overflow: hidden;
+	& .my-dots-bot {
+		display: none !important;
+		@media screen and (max-width: 768px) {
+			display: flex !important;
+		}
+	}
+}
+.tovar-for__item {
+	padding: 5px;
+	box-sizing: border-box;
+}
+.tovar-for__wrap-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.sliders {
+	overflow: hidden;
+	width: 100%;
+}
