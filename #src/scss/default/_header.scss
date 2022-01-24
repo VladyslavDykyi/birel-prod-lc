@@ -3,6 +3,7 @@
 	padding: 30px 0;
 	width: 100vw;
 	position: fixed;
+	box-shadow: $box-shadow3;
 	&-box {
 		display: flex;
 		align-items: center;
@@ -10,9 +11,21 @@
 	&-logo {
 	
 	}
+	&-r {
+		margin-left: auto;
+		display: flex;
+		align-items: center;
+	}
 	&-list {
 		display: flex;
 		align-items: center;
+		grid-gap: 60px;
+		@media screen and (max-width: 768px) {
+			grid-gap: 20px;
+		}
+		@media screen and (max-width: 425px) {
+			grid-gap: 10px;
+		}
 		&-item {
 			& a {
 				position: relative;
@@ -28,14 +41,39 @@
 	&-user {
 		display: flex;
 		align-items: center;
+		grid-gap: 10px;
+		margin-left: 160px;
+		@media screen and (max-width: 768px) {
+			margin-left: 30px;
+		}
+		@media screen and (max-width: 425px) {
+			margin-left: 10px;
+			grid-gap: 5px;
+		}
 		&-avatar {
+			max-height: 42px;
+			max-width: 42px;
 			& .avatar {
-			
+				max-width: 42px;
+				min-width: 42px;
+				min-height: 42px;
+				max-height: 42px;
+				object-fit: cover;
+				border-radius: 50%;
 			}
 		}
 		&-menu {
 			& .btn-menu {
-			
+				width: 110px;
+				text-align: left;
+				border-bottom: 1px solid $white;
+				font-family: $WS-m;
+				font-weight: 500;
+				font-size: 18px;
+				color: #FFFFFF;
+				@media screen and (max-width: 425px) {
+					width: 90px;
+				}
 			}
 			& .menu-box {
 			
@@ -50,8 +88,8 @@
 }
 .counter {
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: -12px;
+	right: -10px;
 	width: 24px;
 	height: 24px;
 	background: #1BC082;
@@ -59,7 +97,6 @@
 	box-sizing: border-box;
 	border-radius: 50%;
 	font-family: $WS-m;
-	font-style: normal;
 	font-weight: 600;
 	font-size: 14px;
 	line-height: 16px;
@@ -67,4 +104,11 @@
 	align-items: center;
 	justify-content: center;
 	color: #FFFFFF;
+	@media screen and (max-width: 425px) {
+		top: -8px;
+		right: -5px;
+		width: 18px;
+		height: 18px;
+		font-weight: 400;
+	}
 }

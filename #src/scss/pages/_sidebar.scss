@@ -1,0 +1,62 @@
+.sidebar {
+	background-color: $white;
+	box-shadow: $box-shadow4;
+	width: 352px;
+	height: calc(100vh - 102px);
+	display: flex;
+	flex-direction: column;
+	&-nav {
+		padding: 50px 20px 0 65px;
+		flex-grow: 1;
+		&-item {
+			margin-bottom: 35px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			& .nav-link {
+				display: flex;
+				align-items: center;
+				grid-gap: 20px;
+				& .icon:nth-child(2) {
+					display: none;
+				}
+				&.active {
+					& .icon:nth-child(1) {
+						display: none;
+					}
+					& .icon:nth-child(2) {
+						display: block;
+					}
+					& span {
+						color: $green;
+					}
+				}
+			}
+		}
+	}
+	&-btn {
+		padding: 15px 105px 15px 65px;
+		background-color: $purple;
+		& button {
+			display: flex;
+			align-items: center;
+			text-align: left;
+			& i {
+				flex: 0 0 55px;
+			}
+		}
+	}
+	&-list {
+		padding: 15px 0 15px 70px;
+		background-color: $purple3;
+		&-item {
+			margin-bottom: 10px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			& .item-link {
+			
+			}
+		}
+	}
+}

@@ -12,14 +12,9 @@
 /*--- стили кнопок ---*/
 .reset-btn {
 	background: transparent;
-	font-size: 18px;
 	padding: 0;
 	border: 0;
-	width: 21px;
-	height: 21px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	border-radius: 0;
 }
 .btn {
 	width: 100%;

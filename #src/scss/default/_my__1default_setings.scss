@@ -19,7 +19,8 @@ $gradient-two:linear-gradient(93.19deg, #573CDA 10.16%, #3D2B93 97.41%);
 
 $box-shadow:6px 6px 64px rgba(0, 0, 0, 0.25);
 $box-shadow2:0px 4px 4px rgba(0, 0, 0, 0.25);
-
+$box-shadow3:3px 3px 8px rgba(23, 17, 50, 0.25);
+$box-shadow4:3px 0px 6px rgba(10, 12, 80, 0.15);
 
 $A-r:"anton-Regular";
 $WS-r:"WorkSans-Regular";
@@ -83,29 +84,18 @@ label {
 /*---контейнер сайта ---*/
 .container {
 	position: relative;
-	max-width: 1550px;
 	width: 100%;
 	margin: 0 auto;
-	padding: 0 15px;
+	padding: 0 65px;
 	box-sizing: border-box;
-	@media screen and (max-width: 1440px) {
-		max-width: 1280px;
-	}
-	@media screen and (max-width: 1440px) {
-		max-width: 1024px;
-	}
-	@media screen and (max-width: 1024px) {
-		max-width: 768px;
-	}
 	@media screen and (max-width: 768px) {
-		max-width: 100%;
-		padding: 0 15px;
+		padding: 0 10px;
 	}
 }
 /*---контейнер сайта ---*/
 .bg-site {
 	background-color: $white;
-	padding: 150px 0 0;
+	padding: 102px 0 0;
 	box-sizing: border-box;
 	@media screen and (max-width: 425px) {
 		padding: 100px 0 0;
