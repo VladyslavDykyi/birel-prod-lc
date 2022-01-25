@@ -4,6 +4,7 @@
 	width: 100vw;
 	position: fixed;
 	box-shadow: $box-shadow3;
+	z-index: 1000;
 	&-box {
 		display: flex;
 		align-items: center;

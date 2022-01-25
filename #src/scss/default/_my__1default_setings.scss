@@ -9,10 +9,15 @@ $purple-hover:#5634F7;
 $purple2:#515994;
 $purple3:#2A206A;
 
+
+
 $green:#1BC082;
 $green-hover:#23C89A;
 
 $black:#000;
+$black2:#2A206A;
+$black3:#515994;
+
 
 $gradient:linear-gradient(208.1deg, #F6F4FF 7.35%, #E5DDFA 79.61%);
 $gradient-two:linear-gradient(93.19deg, #573CDA 10.16%, #3D2B93 97.41%);
@@ -73,6 +78,7 @@ body.lock {
 }
 i {
 	transition: all 0.2s linear;
+	&::after,
 	&::before {
 		transition: all 0.2s linear;
 	}
@@ -101,27 +107,8 @@ label {
 		padding: 100px 0 0;
 	}
 }
-.bg-form {
-	padding: 140px 0;
-	position: relative;
-	background: $gradient-two;
-	@media screen and (max-width: 1024px) {
-		padding: 40px 0;
-	}
-}
-.wg:hover {
-	& a {
-		color: $white;
-		font-weight: 600;
-	}
-}
-.normal-visible {
-	overflow-x: hidden;
-	overflow-y: visible;
-	width: 100%;
-	scrollbar-width: none;
-	&::-webkit-scrollbar { /* webkit */
-		width: 0;
-		height: 0;
-	}
+
+.box-container {
+	display: flex;
+	background-color: $white2;
 }

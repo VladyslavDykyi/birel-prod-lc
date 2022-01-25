@@ -19,9 +19,9 @@
 		color: $grey-lite;
 	}
 	&:focus {
-		border: 1px solid $grey-lite;
+		border-color: $purple;
 	}
 	&:active {
-		border: 1px solid $grey-lite;
+		border-color: $purple;
 	}
 }

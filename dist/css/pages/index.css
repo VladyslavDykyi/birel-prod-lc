@@ -1,8 +1,8 @@
 .sidebar {
-  background-color: #fff;
+  background-color: #F6F4FF;
   -webkit-box-shadow: 3px 0px 6px rgba(10, 12, 80, 0.15);
           box-shadow: 3px 0px 6px rgba(10, 12, 80, 0.15);
-  width: 352px;
+  width: 350px;
   height: calc(100vh - 102px);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11,6 +11,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
+  z-index: 10;
 }
 
 .sidebar-nav {
@@ -40,6 +42,18 @@
 
 .sidebar-nav-item .nav-link .icon:nth-child(2) {
   display: none;
+}
+
+.sidebar-nav-item .nav-link:hover .icon:nth-child(1) {
+  display: none;
+}
+
+.sidebar-nav-item .nav-link:hover .icon:nth-child(2) {
+  display: block;
+}
+
+.sidebar-nav-item .nav-link:hover span {
+  color: #1BC082;
 }
 
 .sidebar-nav-item .nav-link.active .icon:nth-child(1) {
@@ -86,4 +100,97 @@
 
 .sidebar-list-item:last-child {
   margin-bottom: 0;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #F6F4FF;
+}
+
+.content-box {
+  padding: 40px 60px 0 65px;
+  background-color: #fff;
+}
+
+.content-box.tabs {
+  width: 550px;
+}
+
+.content-box-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.content-box-title {
+  margin-bottom: 30px;
+}
+
+.content-box-form .form-list {
+  margin-bottom: 30px;
+}
+
+.content-box-form .form-list-item {
+  margin-bottom: 20px;
+}
+
+.content-box-form .form-list-item:last-child {
+  margin-bottom: 0;
+}
+
+.content-box-form .form-list-item label {
+  margin-bottom: 8px;
+  display: block;
+}
+
+.content-box-form .form-checkbox {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #573CDA;
+  margin-bottom: 60px;
+}
+
+.content-box.password {
+  width: auto;
+  background-color: #F6F4FF;
+}
+
+.content-box-text {
+  margin-bottom: 40px;
+}
+
+.content-box-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 755px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content-box-wrapper .box-text {
+  width: 300px;
+}
+
+.content-box-wrapper .box-text ul {
+  margin-top: 7px;
+  padding-left: 30px;
+}
+
+.content-box + .content-box {
+  padding: 132px 0 0 80px;
+}
+
+.content-box + .content-box .content-box-title {
+  margin-bottom: 8px;
+}
+
+.content-box + .content-box .content-box-form {
+  width: 400px;
 }

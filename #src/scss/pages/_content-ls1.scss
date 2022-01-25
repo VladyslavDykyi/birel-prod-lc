@@ -1,0 +1,68 @@
+.content {
+	display: flex;
+	background-color: $white2;
+	&-box {
+		padding: 40px 60px 0 65px;
+		background-color: $white;
+		&.tabs {
+			width: 550px;
+		}
+		&-nav {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 60px;
+		}
+		&-title {
+			margin-bottom: 30px;
+		}
+		&-form {
+			& .form-list {
+				margin-bottom: 30px;
+				&-item {
+					margin-bottom: 20px;
+					&:last-child {
+						margin-bottom: 0;
+					}
+					& label {
+						margin-bottom: 8px;
+						display: block;
+					}
+				}
+			}
+			& .form-checkbox {
+				padding-bottom: 40px;
+				border-bottom: 1px solid $purple;
+				margin-bottom: 60px;
+			}
+		}
+		&.password {
+			width: auto;
+			background-color: $white2;
+		}
+		&-text {
+			margin-bottom: 40px;
+		}
+		&-wrapper {
+			display: flex;
+			width: 755px;
+			justify-content: space-between;
+			& .box-text {
+				width: 300px;
+				& ul {
+					margin-top: 7px;
+					padding-left: 30px;
+				}
+			}
+		}
+	}
+	
+}
+.content-box + .content-box {
+	padding: 132px 0 0 80px;
+	& .content-box-title {
+		margin-bottom: 8px;
+	}
+	& .content-box-form {
+		width: 400px;
+	}
+}
