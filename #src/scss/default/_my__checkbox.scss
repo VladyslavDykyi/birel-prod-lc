@@ -107,18 +107,27 @@
 	vertical-align: top;
 	background: white;
 	transition: .2s;
+	@media screen and (max-width: 768px) {
+		width: 35px;
+		height: 22px;
+	}
 }
 .checkbox-ios .checkbox-ios-switch:before {
 	content: '';
 	position: absolute;
 	top: 2px;
-	left: 1px;
+	left: 2px;
 	display: inline-block;
 	width: 6px;
 	height: 6px;
 	border-radius: 50%;
 	background: $purple2;
 	transition: .15s;
+	@media screen and (max-width: 768px) {
+		top: 4.5px;
+		width: 9.5px;
+		height: 9.5px;
+	}
 }
 .checkbox-ios input[type=checkbox] {
 	display: block;
@@ -137,6 +146,9 @@
 .checkbox-ios input[type=checkbox]:checked + .checkbox-ios-switch:before {
 	transform:translateX(10px);
 	background: $purple;
+	@media screen and (max-width: 768px) {
+		transform:translateX(17px);
+	}
 }
 
 /* Hover */

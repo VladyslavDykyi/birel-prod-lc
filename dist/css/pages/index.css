@@ -149,10 +149,10 @@
   display: block;
 }
 
-.content-box-form .form-checkbox {
-  padding-bottom: 40px;
-  border-bottom: 1px solid #573CDA;
-  margin-bottom: 60px;
+.content-box-form .form-btn {
+  padding-top: 60px;
+  border-top: 1px solid #573CDA;
+  margin-top: 40px;
 }
 
 .content-box.password {
@@ -168,7 +168,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 755px;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  grid-gap: 30px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -184,13 +186,100 @@
 }
 
 .content-box + .content-box {
-  padding: 132px 0 0 80px;
+  padding: 132px 80px 0 80px;
 }
 
 .content-box + .content-box .content-box-title {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .content-box + .content-box .content-box-form {
   width: 400px;
+}
+
+@media screen and (max-width: 1400px) {
+  .sidebar-nav {
+    padding: 50px 20px 0 20px;
+  }
+
+  .sidebar-nav-item .nav-link {
+    grid-gap: 10px;
+  }
+
+  .sidebar-btn {
+    padding: 15px 50px 15px 20px;
+  }
+
+  .sidebar-list {
+    padding: 15px 0 15px 20px;
+  }
+
+  .content-box {
+    padding: 40px 20px 80px 20px;
+  }
+
+  .content-box.tabs {
+    width: 100%;
+  }
+
+  .content-box + .content-box {
+    padding: 132px 20px 80px 20px;
+    width: 100%;
+  }
+
+  .content-box + .content-box .content-box-form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sidebar {
+    position: absolute;
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .content-box + .content-box {
+    padding: 40px 20px 80px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .content-box {
+    padding: 20px 15px 60px 15px;
+  }
+
+  .content-box-nav {
+    margin-bottom: 25px;
+  }
+
+  .content-box-nav .f18-l32 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .content-box-form .form-btn {
+    padding-top: 50px;
+    margin-top: 30px;
+  }
+
+  .content-box-text {
+    margin-bottom: 25px;
+  }
+
+  .content-box + .content-box {
+    padding: 40px 15px 108px 15px;
+  }
 }

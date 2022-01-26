@@ -22,10 +22,7 @@
 		align-items: center;
 		grid-gap: 60px;
 		@media screen and (max-width: 768px) {
-			grid-gap: 20px;
-		}
-		@media screen and (max-width: 425px) {
-			grid-gap: 10px;
+			display: none;
 		}
 		&-item {
 			& a {
