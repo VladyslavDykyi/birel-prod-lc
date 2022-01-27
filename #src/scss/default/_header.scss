@@ -5,9 +5,21 @@
 	position: fixed;
 	box-shadow: $box-shadow3;
 	z-index: 1000;
+	@media screen and (max-width: 768px) {
+		padding: 9px 0;
+	}
 	&-box {
 		display: flex;
 		align-items: center;
+		@media screen and (max-width: 768px) {
+			justify-content: space-between;
+		}
+	}
+	&-burger {
+		display: none;
+		@media screen and (max-width: 768px) {
+			display: block;
+		}
 	}
 	&-logo {
 	
@@ -16,6 +28,9 @@
 		margin-left: auto;
 		display: flex;
 		align-items: center;
+		@media screen and (max-width: 768px) {
+			margin-left: 0;
+		}
 	}
 	&-list {
 		display: flex;
@@ -42,10 +57,9 @@
 		grid-gap: 10px;
 		margin-left: 160px;
 		@media screen and (max-width: 768px) {
-			margin-left: 30px;
+			margin-left: 0;
 		}
 		@media screen and (max-width: 425px) {
-			margin-left: 10px;
 			grid-gap: 5px;
 		}
 		&-avatar {
@@ -61,6 +75,9 @@
 			}
 		}
 		&-menu {
+			@media screen and (max-width: 768px) {
+				display: none;
+			}
 			& .btn-menu {
 				width: 110px;
 				text-align: left;

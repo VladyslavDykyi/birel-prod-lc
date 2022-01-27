@@ -95,7 +95,7 @@ label {
 	padding: 0 65px;
 	box-sizing: border-box;
 	@media screen and (max-width: 768px) {
-		padding: 0 10px;
+		padding: 0 15px;
 	}
 }
 /*---контейнер сайта ---*/
@@ -103,8 +103,8 @@ label {
 	background-color: $white;
 	padding: 102px 0 0;
 	box-sizing: border-box;
-	@media screen and (max-width: 425px) {
-		padding: 100px 0 0;
+	@media screen and (max-width: 768px) {
+		padding: 80px 0 0;
 	}
 }
 

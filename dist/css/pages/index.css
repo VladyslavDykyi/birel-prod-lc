@@ -128,6 +128,16 @@
   margin-bottom: 60px;
 }
 
+.content-box-nav .title {
+  opacity: 0.5;
+  border-bottom: 1px solid #573CDA;
+}
+
+.content-box-nav .title.active {
+  opacity: 1;
+  border-bottom: 1px solid transparent;
+}
+
 .content-box-title {
   margin-bottom: 30px;
 }
@@ -254,13 +264,13 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+
+  .content-box {
+    padding: 0 15px 60px 15px;
+  }
 }
 
 @media screen and (max-width: 580px) {
-  .content-box {
-    padding: 20px 15px 60px 15px;
-  }
-
   .content-box-nav {
     margin-bottom: 25px;
   }
