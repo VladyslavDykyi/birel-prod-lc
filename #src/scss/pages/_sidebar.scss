@@ -45,8 +45,20 @@
 				@media screen and (max-width: 1400px) {
 					grid-gap: 10px;
 				}
+				& .icon:nth-child(1) {
+					display: block;
+					@media screen and (max-width: 768px) {
+						display: none;
+					}
+				}
 				& .icon:nth-child(2) {
 					display: none;
+				}
+				& .icon:nth-child(3) {
+					display: none;
+					@media screen and (max-width: 768px) {
+						display: block;
+					}
 				}
 				& span {
 					@media screen and (max-width: 768px) {
@@ -60,6 +72,9 @@
 					& .icon:nth-child(2) {
 						display: block;
 					}
+					& .icon:nth-child(3) {
+						display: none;
+					}
 					& span {
 						color: $green;
 					}
@@ -70,6 +85,9 @@
 					}
 					& .icon:nth-child(2) {
 						display: block;
+					}
+					& .icon:nth-child(3) {
+						display: none;
 					}
 					& span {
 						color: $green;
