@@ -1,11 +1,13 @@
 .content {
 	display: flex;
 	background-color: $white2;
+	//height: calc(100vh - 102px);
 	@media screen and (max-width: 1024px) {
 		width: 100%;
 	}
 	@media screen and (max-width: 768px) {
 		flex-direction: column;
+		height: auto;
 	}
 	&-box {
 		padding: 40px 60px 0 65px;
@@ -14,9 +16,9 @@
 			padding: 40px 20px 80px 20px;
 		}
 		@media screen and (max-width: 768px) {
-			padding: 0 15px 60px 15px;
+			padding: 40px 15px 60px 15px;
 		}
-		&.tabs {
+		&#tabs {
 			width: 550px;
 			@media screen and (max-width: 1400px) {
 				width: 100%;
@@ -35,7 +37,7 @@
 					line-height: 16px;
 				}
 			}
-			& .title {
+			& .tab-n {
 				opacity: 0.5;
 				border-bottom: 1px solid $purple;
 				&.active {
@@ -46,6 +48,12 @@
 		}
 		&-title {
 			margin-bottom: 30px;
+		}
+		& .content-t {
+			display: none;
+			&.active {
+				display: block;
+			}
 		}
 		&-form {
 			& .form-list {
@@ -62,11 +70,11 @@
 				}
 			}
 			& .form-btn {
-				padding-top: 60px;
+				padding: 60px 0;
 				border-top: 1px solid $purple;
 				margin-top: 40px;
 				@media screen and (max-width: 580px) {
-					padding-top: 50px;
+					padding: 50px 0;
 					margin-top: 30px;
 				}
 			}

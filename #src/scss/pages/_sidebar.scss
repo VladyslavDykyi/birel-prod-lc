@@ -11,12 +11,28 @@
 		position: absolute;
 		display: none;
 	}
+	@media screen and (max-width: 768px) {
+		display: none;
+		height: calc(100vh - 120px);
+		width: 100vw;
+		overflow-x: hidden;
+		overflow-y: auto;
+		position: fixed;
+		background-color: $purple3;
+	}
+	&.active {
+		display: flex;
+	}
 	&-nav {
 		padding: 50px 20px 0 65px;
+		flex-grow: 1;
 		@media screen and (max-width: 1400px) {
 			padding: 50px 20px 0 20px;
 		}
-		flex-grow: 1;
+		@media screen and (max-width: 768px) {
+			padding: 50px 20px 50px 20px;
+			flex-grow: 0;
+		}
 		&-item {
 			margin-bottom: 35px;
 			&:last-child {
@@ -31,6 +47,11 @@
 				}
 				& .icon:nth-child(2) {
 					display: none;
+				}
+				& span {
+					@media screen and (max-width: 768px) {
+						color: $white;
+					}
 				}
 				&:hover {
 					& .icon:nth-child(1) {
@@ -59,10 +80,14 @@
 	}
 	&-btn {
 		padding: 15px 105px 15px 65px;
+		
+		background-color: $purple;
 		@media screen and (max-width: 1400px) {
 			padding: 15px 50px 15px 20px;
 		}
-		background-color: $purple;
+		@media screen and (max-width: 768px) {
+			background-color: $purple3;
+		}
 		& button {
 			display: flex;
 			align-items: center;

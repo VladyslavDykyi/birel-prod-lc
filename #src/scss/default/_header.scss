@@ -20,6 +20,17 @@
 		@media screen and (max-width: 768px) {
 			display: block;
 		}
+		& .icon-close {
+			display: none;
+		}
+		&.active {
+			& .icon-burger {
+				display: none;
+			}
+			& .icon-close {
+				display: block;
+			}
+		}
 	}
 	&-logo {
 	

@@ -1121,6 +1121,18 @@ label {
   display: none;
 }
 
+.header-burger .icon-close {
+  display: none;
+}
+
+.header-burger.active .icon-burger {
+  display: none;
+}
+
+.header-burger.active .icon-close {
+  display: block;
+}
+
 .header-r {
   margin-left: auto;
   display: -webkit-box;
@@ -1231,12 +1243,16 @@ label {
 }
 
 @media screen and (max-width: 768px) {
+  body.lock {
+    overflow: hidden;
+  }
+
   .container {
     padding: 0 15px;
   }
 
   .bg-site {
-    padding: 80px 0 0;
+    padding: 60px 0 0;
   }
 
   .checkbox-ios .checkbox-ios-switch {
@@ -1258,6 +1274,8 @@ label {
 
   .footer-bg {
     display: block;
+    -webkit-box-shadow: 3px 0px 8px rgba(23, 17, 50, 0.25);
+            box-shadow: 3px 0px 8px rgba(23, 17, 50, 0.25);
   }
 
   .footer-bg .header-list {
@@ -1328,12 +1346,6 @@ label {
 
   .title.s:after {
     bottom: 0;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  body.lock {
-    overflow: hidden;
   }
 }
 

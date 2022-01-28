@@ -8,6 +8,7 @@
 	width: 100vw;
 	@media screen and (max-width: 768px){
 		display: block;
+		box-shadow: $box-shadow5;
 	}
 	& .header-list {
 		@media screen and (max-width: 768px){
