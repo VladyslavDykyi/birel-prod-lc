@@ -18,7 +18,7 @@ let path = {
 	src: {
 		html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
 		csslib: source_folder + "/scss/lib/*.scss",
-		cssdef: [source_folder + "/scss/default/style.scss", "!" + source_folder + "/scss/default/_*.scss"],
+		cssdef: [source_folder + "/scss/default/style-lc.scss", "!" + source_folder + "/scss/default/_*.scss"],
 		csspage: [source_folder + "/scss/pages/*.scss", "!" + source_folder + "/scss/pages/_*.scss"],
 		jslib: source_folder + "/js/lib/*.js",
 		jsdef: [source_folder + "/js/default/*.js", "!" + source_folder + "/js/pages/_*.js"],

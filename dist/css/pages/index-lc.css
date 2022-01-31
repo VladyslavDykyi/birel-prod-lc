@@ -278,16 +278,6 @@
     display: none;
   }
 
-  .content {
-    width: 100%;
-  }
-
-  .content-box + .content-box {
-    padding: 40px 20px 80px 20px;
-  }
-}
-
-@media screen and (max-width: 768px) {
   .sidebar {
     display: none;
     height: calc(100vh - 120px);
@@ -321,6 +311,16 @@
     background-color: #2A206A;
   }
 
+  .content {
+    width: 100%;
+  }
+
+  .content-box + .content-box {
+    padding: 40px 20px 80px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

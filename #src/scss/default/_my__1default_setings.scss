@@ -73,7 +73,7 @@ figure {
 	}
 }
 body.lock {
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 1024px) {
 		overflow: hidden;
 	}
 }
@@ -104,7 +104,7 @@ label {
 	background-color: $white;
 	padding: 102px 0 0;
 	box-sizing: border-box;
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 1024px) {
 		padding: 60px 0 0;
 	}
 }

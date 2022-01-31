@@ -11,7 +11,7 @@
 		position: absolute;
 		display: none;
 	}
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 1024px) {
 		display: none;
 		height: calc(100vh - 120px);
 		width: 100vw;
@@ -29,7 +29,7 @@
 		@media screen and (max-width: 1400px) {
 			padding: 50px 20px 0 20px;
 		}
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 1024px) {
 			padding: 50px 20px 50px 20px;
 			flex-grow: 0;
 		}
@@ -47,7 +47,7 @@
 				}
 				& .icon:nth-child(1) {
 					display: block;
-					@media screen and (max-width: 768px) {
+					@media screen and (max-width: 1024px) {
 						display: none;
 					}
 				}
@@ -56,12 +56,12 @@
 				}
 				& .icon:nth-child(3) {
 					display: none;
-					@media screen and (max-width: 768px) {
+					@media screen and (max-width: 1024px) {
 						display: block;
 					}
 				}
 				& span {
-					@media screen and (max-width: 768px) {
+					@media screen and (max-width: 1024px) {
 						color: $white;
 					}
 				}
@@ -103,7 +103,7 @@
 		@media screen and (max-width: 1400px) {
 			padding: 15px 50px 15px 20px;
 		}
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 1024px) {
 			background-color: $purple3;
 		}
 		& button {
