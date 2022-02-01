@@ -1,7 +1,6 @@
 .content {
 	display: flex;
 	background-color: $white2;
-	//height: calc(100vh - 102px);
 	@media screen and (max-width: 1024px) {
 		width: 100%;
 	}
@@ -93,7 +92,6 @@
 			display: flex;
 			flex-wrap: wrap-reverse;
 			grid-gap: 30px;
-			//width: 755px;
 			justify-content: space-between;
 			& .box-text {
 				width: 300px;
