@@ -24,35 +24,13 @@
 			}
 		}
 		&-nav {
-			display: flex;
-			justify-content: space-between;
 			margin-bottom: 60px;
 			@media screen and (max-width: 580px) {
 				margin-bottom: 25px;
 			}
-			& .f18-l32 {
-				@media screen and (max-width: 580px) {
-					font-size: 12px;
-					line-height: 16px;
-				}
-			}
-			& .tab-n {
-				opacity: 0.5;
-				border-bottom: 1px solid $purple;
-				&.active {
-					opacity: 1;
-					border-bottom: 1px solid transparent;
-				}
-			}
 		}
 		&-title {
 			margin-bottom: 30px;
-		}
-		& .content-t {
-			display: none;
-			&.active {
-				display: block;
-			}
 		}
 		&-form {
 			& .form-list {

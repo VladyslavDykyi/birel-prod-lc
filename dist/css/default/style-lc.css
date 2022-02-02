@@ -281,6 +281,35 @@ label {
   background-color: #F6F4FF;
 }
 
+#tabs .nav-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#tabs .nav-tabs .tab-n {
+  opacity: 0.5;
+  border-bottom: 1px solid #573CDA;
+  cursor: pointer;
+}
+
+#tabs .nav-tabs .tab-n.active {
+  opacity: 1;
+  border-bottom: 1px solid transparent;
+  cursor: auto;
+}
+
+#tabs .content-t {
+  display: none;
+}
+
+#tabs .content-t.active {
+  display: block;
+}
+
 .btn-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -298,7 +327,7 @@ label {
 /*--- стили кнопок ---*/
 
 .reset-btn {
-  background: transparent;
+  background-color: transparent;
   padding: 0;
   border: 0;
   border-radius: 0;
@@ -308,7 +337,7 @@ label {
   width: 100%;
   height: 49px;
   border-radius: 35px;
-  background: #573CDA;
+  background-color: #573CDA;
   border: 1px solid #573CDA;
   font-family: "WorkSans-Medium";
   font-weight: 500;
@@ -331,13 +360,13 @@ label {
 }
 
 .btn:disabled:hover {
-  background: #573CDA;
+  background-color: #573CDA;
   color: #fff;
   border-color: #573CDA;
 }
 
 .btn:disabled:active {
-  background: #573CDA;
+  background-color: #573CDA;
   color: #fff;
 }
 
@@ -346,49 +375,49 @@ label {
 }
 
 .btn:hover {
-  background: #fff;
+  background-color: #fff;
   color: #5634F7;
   border-color: #5634F7;
 }
 
 .btn:active {
-  background: #fff;
+  background-color: #fff;
   color: #573CDA;
 }
 
 .btn-green {
-  background: #1BC082;
+  background-color: #1BC082;
   border: 1px solid #1BC082;
   color: #fff;
 }
 
 .btn-green:disabled {
   opacity: 0.5;
-  background: #1BC082;
+  background-color: #1BC082;
   border: 1px solid #1BC082;
   color: #fff;
 }
 
 .btn-green:disabled:hover {
-  background: #1BC082;
+  background-color: #1BC082;
   border-color: #1BC082;
   color: #fff;
 }
 
 .btn-green:disabled:active {
-  background: #1BC082;
+  background-color: #1BC082;
   border-color: #1BC082;
   color: #fff;
 }
 
 .btn-green:hover {
-  background: #fff;
+  background-color: #fff;
   color: #23C89A;
   border-color: #23C89A;
 }
 
 .btn-green:active {
-  background: #fff;
+  background-color: #fff;
   color: #1BC082;
 }
 
@@ -396,7 +425,7 @@ label {
   width: 116px;
   height: 60px;
   border-radius: 30px;
-  background: #fff;
+  background-color: #fff;
   border: 1px solid #573CDA;
   font-family: "WorkSans-Medium";
   font-weight: 500;
@@ -419,48 +448,47 @@ label {
 }
 
 .btn2:hover {
-  background: #5634F7;
+  background-color: #5634F7;
   color: #fff;
   border-color: #5634F7;
 }
 
 .btn2:active {
-  background: #573CDA;
+  background-color: #573CDA;
   color: #fff;
 }
 
 .btn2-green {
-  background: #fff;
   border: 1px solid #1BC082;
   color: #1BC082;
 }
 
 .btn2-green:disabled {
   opacity: 0.5;
-  background: #fff;
+  background-color: #fff;
   border: 1px solid #1BC082;
   color: #1BC082;
 }
 
 .btn2-green:disabled:hover {
-  background: #fff;
+  background-color: #fff;
   color: #1BC082;
   border-color: #1BC082;
 }
 
 .btn2-green:disabled:active {
-  background: #1BC082;
+  background-color: #1BC082;
   color: #1BC082;
 }
 
 .btn2-green:hover {
-  background: #23C89A;
+  background-color: #23C89A;
   color: #fff;
   border-color: #23C89A;
 }
 
 .btn2-green:active {
-  background: #1BC082;
+  background-color: #1BC082;
   color: #fff;
 }
 
@@ -468,7 +496,7 @@ label {
   width: 144px;
   height: 60px;
   border-radius: 30px;
-  background: #fff;
+  background-color: #fff;
   border: 1px solid transparent;
   color: #573CDA;
   font-family: "WorkSans-Medium";
@@ -503,6 +531,22 @@ label {
 .btn3:active {
   color: #573CDA;
   border-color: #573CDA;
+}
+
+.b-h {
+  background-color: transparent;
+}
+
+.b-h:hover {
+  background-color: transparent;
+  color: #1BC082;
+  border-color: #1BC082;
+}
+
+.b-h:active {
+  background-color: transparent;
+  color: #1BC082;
+  border-color: #1BC082;
 }
 
 /* Option */
@@ -1108,6 +1152,10 @@ label {
   width: 265px;
 }
 
+.h49 {
+  height: 49px;
+}
+
 .footer-bg {
   display: none;
   background-color: #573CDA;
@@ -1341,6 +1389,11 @@ label {
 }
 
 @media screen and (max-width: 580px) {
+  #tabs .nav-tabs .f18-l32 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
   .btn-group-w50 {
     grid-gap: 10px;
   }

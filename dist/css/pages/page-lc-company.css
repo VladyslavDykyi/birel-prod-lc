@@ -3,6 +3,7 @@
   -webkit-box-shadow: 3px 0px 6px rgba(10, 12, 80, 0.15);
           box-shadow: 3px 0px 6px rgba(10, 12, 80, 0.15);
   width: 350px;
+  min-width: 350px;
   height: calc(100vh - 102px);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,6 +125,29 @@
   margin-bottom: 0;
 }
 
+.company {
+  background-color: #fff;
+  width: 100%;
+  padding: 45px 65px;
+}
+
+.company-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  grid-gap: 66px;
+}
+
+.company-item {
+  background-color: #fff;
+  border: 1px solid #AB9DEC;
+  width: 310px;
+  padding: 50px;
+  position: relative;
+}
+
 @media screen and (max-width: 1400px) {
   .sidebar-nav {
     padding: 50px 20px 0 20px;
@@ -144,14 +168,10 @@
 
 @media screen and (max-width: 1024px) {
   .sidebar {
-    position: absolute;
-    display: none;
-  }
-
-  .sidebar {
     display: none;
     height: calc(100vh - 120px);
     width: 100vw;
+    min-width: 100vw;
     overflow-x: hidden;
     overflow-y: auto;
     position: fixed;

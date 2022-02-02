@@ -3,6 +3,7 @@
   -webkit-box-shadow: 3px 0px 6px rgba(10, 12, 80, 0.15);
           box-shadow: 3px 0px 6px rgba(10, 12, 80, 0.15);
   width: 350px;
+  min-width: 350px;
   height: calc(100vh - 102px);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -141,35 +142,11 @@
 }
 
 .content-box-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-bottom: 60px;
-}
-
-.content-box-nav .tab-n {
-  opacity: 0.5;
-  border-bottom: 1px solid #573CDA;
-}
-
-.content-box-nav .tab-n.active {
-  opacity: 1;
-  border-bottom: 1px solid transparent;
 }
 
 .content-box-title {
   margin-bottom: 30px;
-}
-
-.content-box .content-t {
-  display: none;
-}
-
-.content-box .content-t.active {
-  display: block;
 }
 
 .content-box-form .form-list {
@@ -274,14 +251,10 @@
 
 @media screen and (max-width: 1024px) {
   .sidebar {
-    position: absolute;
-    display: none;
-  }
-
-  .sidebar {
     display: none;
     height: calc(100vh - 120px);
     width: 100vw;
+    min-width: 100vw;
     overflow-x: hidden;
     overflow-y: auto;
     position: fixed;
@@ -337,11 +310,6 @@
 @media screen and (max-width: 580px) {
   .content-box-nav {
     margin-bottom: 25px;
-  }
-
-  .content-box-nav .f18-l32 {
-    font-size: 12px;
-    line-height: 16px;
   }
 
   .content-box-form .form-btn {
