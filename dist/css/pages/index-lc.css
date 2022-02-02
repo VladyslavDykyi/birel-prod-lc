@@ -135,9 +135,6 @@
 .content-box {
   padding: 40px 60px 0 65px;
   background-color: #fff;
-}
-
-.content-box#tabs {
   width: 550px;
 }
 
@@ -232,11 +229,8 @@
   }
 
   .content-box {
-    padding: 40px 20px 80px 20px;
-  }
-
-  .content-box#tabs {
     width: 100%;
+    padding: 40px 20px 80px 20px;
   }
 
   .content-box + .content-box {
