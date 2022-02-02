@@ -3,9 +3,16 @@
 	width: 100%;
 	padding: 45px 65px;
 	&-list {
+		margin-top: 40px;
 		display: flex;
 		flex-wrap: wrap;
 		grid-gap: 66px;
+		&.content-t {
+			display: none;
+			&.active {
+				display: flex;
+			}
+		}
 	}
 	&-item {
 		background-color: $white;
@@ -15,6 +22,58 @@
 		position: relative;
 		&-link {
 		
+		}
+		&-img {
+			width: 208px;
+			height: 118px;
+			object-fit: contain;
+		}
+		&-company {
+		}
+		&-tech {
+			margin: 6px 0 20px;
+		}
+		&-val {
+			margin-bottom: 6px;
+		}
+		&-numb {
+		
+		}
+		&-form {
+			margin-top: 40px;
+			
+		}
+		&-add-watch {
+			padding-bottom: 10px;
+			display: none;
+			position: relative;
+			&:hover {
+				&  .company-item-drop {
+					display: block;
+				}
+			}
+			&.active {
+				display: block;
+			}
+		}
+		&-watch {
+			display: none;
+			align-items: center;
+			justify-content: space-between;
+			&.active {
+				display: flex;
+			}
+		}
+		&-drop {
+			position: absolute;
+			top: 59px ;
+			left: 0;
+			box-shadow: $box-shadow3;
+			background-color: $white2;
+			padding: 5px;
+			width: 100%;
+			display: none;
+			transition: all 0.3s ease;
 		}
 	}
 }

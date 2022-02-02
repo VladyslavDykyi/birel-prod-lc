@@ -11,17 +11,13 @@
 	&-box {
 		padding: 40px 60px 0 65px;
 		background-color: $white;
+		width: 550px;
 		@media screen and (max-width: 1400px) {
+			width: 100%;
 			padding: 40px 20px 80px 20px;
 		}
 		@media screen and (max-width: 768px) {
 			padding: 40px 15px 60px 15px;
-		}
-		&#tabs {
-			width: 550px;
-			@media screen and (max-width: 1400px) {
-				width: 100%;
-			}
 		}
 		&-nav {
 			margin-bottom: 60px;
