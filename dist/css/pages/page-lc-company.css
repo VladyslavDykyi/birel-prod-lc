@@ -335,7 +335,9 @@
 }
 
 .company-item-watch {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -344,10 +346,10 @@
           justify-content: space-between;
 }
 
-.company-item-watch.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.company-item-watch button:hover i:before {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .company-item-drop {

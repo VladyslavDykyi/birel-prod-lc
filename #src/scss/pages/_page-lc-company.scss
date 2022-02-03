@@ -218,11 +218,11 @@
 			}
 		}
 		&-watch {
-			display: none;
+			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			&.active {
-				display: flex;
+			& button:hover i:before {
+				transform: scale(1.1);
 			}
 		}
 		&-drop {
