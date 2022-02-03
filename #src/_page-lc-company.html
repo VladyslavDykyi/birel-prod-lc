@@ -24,18 +24,39 @@
 				<i class="icon icon-search"></i>
 			</button>
 		</form>
-		<p>
+		<p class="company-search-text t-r f16-l24 purple2">
 			You can add company если компании нет в списке .
-			<a href="#"><i class=""></i></a>
+			<a class="company-search-link" href="#">
+				<i class="icon icon-green-circle-plus"></i>
+			</a>
 		</p>
 	</div>
-	<div>
-		
+	<div class="company-philter">
+		<div class="company-philter-select">
+			<select class="js-example-basic-single">
+				<option value="0">3D Printing</option>
+				<option value="1">Advertising</option>
+				<option value="2">Aerospace</option>
+				<option value="3">Analytics/Big Data</option>
+			</select>
+		</div>
+		<div class="company-philter-select">
+			<select class="js-example-basic-single">
+				<option value="0">< $500M</option>
+				<option value="1">$500M - $1B</option>
+				<option value="2">$1B - $5B</option>
+				<option value="3">$5B +</option>
+			</select>
+		</div>
+		<button class="company-philter-btn" type="button">
+			Clear filters
+			<i class="icon icon-close-green"></i>
+		</button>
 	</div>
 	<ul class="company-list content-t active">
 		<li class="company-item">
 			<a class="company-item-link" href="#">
-				<img class="company-item-img" src="./img/Disney-Logo.png" alt="">
+				<img class="company-item-img" src="./img/test.png" alt="">
 			</a>
 			<a class="company-item-company t-sb f24-l32 purple1" href="#">Company name</a>
 			<p class="company-item-tech t-r f16-l24 purple3">BioTech</p>
@@ -62,7 +83,7 @@
 		</li>
 		<li class="company-item">
 			<a class="company-item-link" href="#">
-				<img class="company-item-img" src="./img/Disney-Logo.png" alt="">
+				<img class="company-item-img" src="./img/about.png" alt="">
 			</a>
 			<a class="company-item-company t-sb f24-l32 purple1" href="#">Company name</a>
 			<p class="company-item-tech t-r f16-l24 purple3">BioTech</p>

@@ -1,36 +1,36 @@
 .select2-container--default .select2-selection--single {
 	background-color: $white;
-	border: 1px solid $greey;
+	border: 1px solid $purple4;
 	box-sizing: border-box;
 	padding: 10px 20px 10px 10px;
 	height: 40px;
-	border-radius: 0px;
+	border-radius: 0;
 	transition: all 0.2s linear;
 	&:hover {
-		border: 1px solid $lite-blue;
+		border: 1px solid $purple4;
 	}
 	&:focus {
-		border: 1px solid $lite-blue;
+		border: 1px solid $purple4;
 	}
 }
 .select2-container--default .select2-selection--single .select2-selection__arrow {
 	height: 40px;
 }
 .select2-container--default .select2-selection--single .select2-selection__rendered {
-	font-family: $R-r;
+	font-family: $WS-r;
 	font-weight: 400;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 20px;
-	color: $greey;
+	color: $purple;
 }
 .select2-container .select2-selection--single .select2-selection__rendered {
-	padding-left: 0px;
-	padding-right: 0px;
+	padding-left: 0;
+	padding-right: 0;
 }
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
-	border-color: #888 #888 transparent transparent;
+	border-color: $purple $purple transparent transparent;
 	border-style: solid;
-	border-width: 2px 2px 0px 0px;
+	border-width: 2px 2px 0 0;
 	left: 50%;
 	transition: all 0.2s linear;
 	transform: rotate(135deg);
@@ -38,18 +38,18 @@
 	margin-top: -6px;
 	position: absolute;
 	top: 50%;
-	height: 5px;
-	width: 5px;
+	height: 9px;
+	width: 9px;
 }
 .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
-	border-color: transparent transparent #888 #888;
-	border-width: 0px 0px 2px 2px;
+	border-color: transparent transparent $purple $purple;
+	border-width: 0 0 2px 2px;
 }
 .select2-results__option {
-	font-family: $R-r;
+	font-family: $WS-r;
 	font-weight: 400;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 20px;
-	color: $greey;
+	color: $purple;
 	padding: 3px 6px;
 }

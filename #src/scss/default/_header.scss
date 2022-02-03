@@ -121,7 +121,7 @@
 	background: #1BC082;
 	border: 1px solid #F6F4FF;
 	box-sizing: border-box;
-	border-radius: 50%;
+	border-radius: 30px;
 	font-family: $WS-m;
 	font-weight: 600;
 	font-size: 14px;
@@ -133,8 +133,10 @@
 	@media screen and (max-width: 425px) {
 		top: -8px;
 		right: -5px;
-		width: 18px;
-		height: 18px;
+		min-width: 20px;
+		width: auto;
+		height: 20px;
+		font-size: 12px;
 		font-weight: 400;
 	}
 }
