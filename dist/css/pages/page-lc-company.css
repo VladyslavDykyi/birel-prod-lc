@@ -495,6 +495,19 @@
   .company-item-numb {
     text-align: center;
   }
+
+  .company-item-drop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background-color: transparent;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -527,7 +540,7 @@
 @media screen and (max-width: 540px) {
   .company-item {
     width: 100%;
-    padding: 40px;
+    padding: 40px 40px 20px 40px;
   }
 }
 
