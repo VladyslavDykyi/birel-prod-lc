@@ -327,7 +327,9 @@
 }
 
 .company-item-add-watch:hover .company-item-drop {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .company-item-add-watch.active {
@@ -362,9 +364,18 @@
   padding: 5px;
   width: 100%;
   display: none;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.company-item-drop p {
+  margin-bottom: 5px;
 }
 
 @media screen and (max-width: 1680px) {
@@ -384,24 +395,6 @@
 
   .company-item {
     width: 30%;
-  }
-}
-
-@media screen and (max-width: 1400px) {
-  .sidebar-nav {
-    padding: 50px 20px 0 20px;
-  }
-
-  .sidebar-nav-item .nav-link {
-    grid-gap: 10px;
-  }
-
-  .sidebar-btn {
-    padding: 15px 50px 15px 20px;
-  }
-
-  .sidebar-list {
-    padding: 15px 0 15px 20px;
   }
 }
 
@@ -451,6 +444,11 @@
 
   .sidebar-btn {
     background-color: #2A206A;
+    padding: 15px 20px 15px 20px;
+  }
+
+  .sidebar-list {
+    padding: 15px 20px 15px 20px;
   }
 
   .company {

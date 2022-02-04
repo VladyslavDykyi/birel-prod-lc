@@ -212,22 +212,6 @@
 }
 
 @media screen and (max-width: 1400px) {
-  .sidebar-nav {
-    padding: 50px 20px 0 20px;
-  }
-
-  .sidebar-nav-item .nav-link {
-    grid-gap: 10px;
-  }
-
-  .sidebar-btn {
-    padding: 15px 50px 15px 20px;
-  }
-
-  .sidebar-list {
-    padding: 15px 0 15px 20px;
-  }
-
   .content-box {
     width: 100%;
     padding: 40px 20px 80px 20px;
@@ -276,6 +260,11 @@
 
   .sidebar-btn {
     background-color: #2A206A;
+    padding: 15px 20px 15px 20px;
+  }
+
+  .sidebar-list {
+    padding: 15px 20px 15px 20px;
   }
 
   .content {

@@ -24,9 +24,6 @@
 	&-nav {
 		padding: 50px 20px 0 65px;
 		flex-grow: 1;
-		@media screen and (max-width: 1400px) {
-			padding: 50px 20px 0 20px;
-		}
 		@media screen and (max-width: 1024px) {
 			padding: 50px 20px 50px 20px;
 			flex-grow: 0;
@@ -41,7 +38,7 @@
 				align-items: center;
 				grid-gap: 20px;
 				@media screen and (max-width: 1400px) {
-					grid-gap: 10px;
+				//	grid-gap: 10px;
 				}
 				& .icon:nth-child(1) {
 					display: block;
@@ -98,11 +95,9 @@
 		padding: 15px 105px 15px 65px;
 		
 		background-color: $purple;
-		@media screen and (max-width: 1400px) {
-			padding: 15px 50px 15px 20px;
-		}
 		@media screen and (max-width: 1024px) {
 			background-color: $purple3;
+			padding: 15px 20px 15px 20px;
 		}
 		& button {
 			display: flex;
@@ -116,8 +111,8 @@
 	&-list {
 		padding: 15px 0 15px 70px;
 		background-color: $purple3;
-		@media screen and (max-width: 1400px) {
-			padding: 15px 0 15px 20px;
+		@media screen and (max-width: 1024px) {
+			padding: 15px 20px 15px 20px;
 		}
 		&-item {
 			margin-bottom: 10px;
@@ -125,7 +120,6 @@
 				margin-bottom: 0;
 			}
 			& .item-link {
-			
 			}
 		}
 	}

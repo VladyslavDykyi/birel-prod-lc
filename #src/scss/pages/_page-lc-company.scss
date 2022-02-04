@@ -210,7 +210,7 @@
 			position: relative;
 			&:hover {
 				&  .company-item-drop {
-					display: block;
+					display: flex;
 				}
 			}
 			&.active {
@@ -234,7 +234,12 @@
 			padding: 5px;
 			width: 100%;
 			display: none;
-			transition: all 0.3s ease;
+			align-items: center;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			& p {
+				margin-bottom: 5px;
+			}
 		}
 	}
 }
