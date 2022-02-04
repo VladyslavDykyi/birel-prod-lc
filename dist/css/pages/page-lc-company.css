@@ -358,6 +358,7 @@
   position: absolute;
   top: 59px;
   left: 0;
+  z-index: 10;
   -webkit-box-shadow: 3px 3px 8px rgba(23, 17, 50, 0.25);
           box-shadow: 3px 3px 8px rgba(23, 17, 50, 0.25);
   background-color: #F6F4FF;
