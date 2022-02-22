@@ -12,7 +12,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
+  position: fixed;
   z-index: 20;
 }
 
@@ -133,7 +133,7 @@
 }
 
 .content-box {
-  padding: 40px 60px 0 65px;
+  padding: 40px 60px 0 415px;
   background-color: #fff;
   width: 550px;
 }
@@ -235,7 +235,6 @@
     min-width: 100vw;
     overflow-x: hidden;
     overflow-y: auto;
-    position: fixed;
     background-color: #2A206A;
   }
 

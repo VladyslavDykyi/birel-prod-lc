@@ -6,7 +6,7 @@
 	height: calc(100vh - 102px);
 	display: flex;
 	flex-direction: column;
-	position: relative;
+	position: fixed;
 	z-index: 20;
 	@media screen and (max-width: 1024px) {
 		display: none;
@@ -15,12 +15,13 @@
 		min-width: 100vw;
 		overflow-x: hidden;
 		overflow-y: auto;
-		position: fixed;
 		background-color: $purple3;
 	}
+	
 	&.active {
 		display: flex;
 	}
+	
 	&-nav {
 		padding: 50px 20px 0 65px;
 		flex-grow: 1;
@@ -28,62 +29,77 @@
 			padding: 50px 20px 50px 20px;
 			flex-grow: 0;
 		}
+		
 		&-item {
 			margin-bottom: 35px;
+			
 			&:last-child {
 				margin-bottom: 0;
 			}
+			
 			& .nav-link {
 				display: flex;
 				align-items: center;
 				grid-gap: 20px;
 				@media screen and (max-width: 1400px) {
-				//	grid-gap: 10px;
+					//	grid-gap: 10px;
 				}
+				
 				& .icon:nth-child(1) {
 					display: block;
 					@media screen and (max-width: 1024px) {
 						display: none;
 					}
 				}
+				
 				& .icon:nth-child(2) {
 					display: none;
 				}
+				
 				& .icon:nth-child(3) {
 					display: none;
 					@media screen and (max-width: 1024px) {
 						display: block;
 					}
 				}
+				
 				& span {
 					@media screen and (max-width: 1024px) {
 						color: $white;
 					}
 				}
+				
 				&:hover {
 					& .icon:nth-child(1) {
 						display: none;
 					}
+					
 					& .icon:nth-child(2) {
 						display: block;
 					}
+					
 					& .icon:nth-child(3) {
 						display: none;
 					}
+					
 					& span {
 						color: $green;
 					}
 				}
+				
 				&.active {
 					& .icon:nth-child(1) {
 						display: none;
 					}
+					
 					& .icon:nth-child(2) {
 						display: block;
 					}
+					
 					& .icon:nth-child(3) {
 						display: none;
 					}
+					
 					& span {
 						color: $green;
 					}
@@ -91,6 +107,7 @@
 			}
 		}
 	}
+	
 	&-btn {
 		padding: 15px 105px 15px 65px;
 		
@@ -99,26 +116,32 @@
 			background-color: $purple3;
 			padding: 15px 20px 15px 20px;
 		}
+		
 		& button {
 			display: flex;
 			align-items: center;
 			text-align: left;
+			
 			& i {
 				flex: 0 0 55px;
 			}
 		}
 	}
+	
 	&-list {
 		padding: 15px 0 15px 70px;
 		background-color: $purple3;
 		@media screen and (max-width: 1024px) {
 			padding: 15px 20px 15px 20px;
 		}
+		
 		&-item {
 			margin-bottom: 10px;
+			
 			&:last-child {
 				margin-bottom: 0;
 			}
+			
 			& .item-link {
 			}
 		}

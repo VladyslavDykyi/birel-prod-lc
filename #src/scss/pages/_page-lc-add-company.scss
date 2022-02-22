@@ -1,36 +1,44 @@
 .box-container {
 
 }
+
 .add {
 	display: flex;
 	@media screen and (max-width: 1024px) {
 		width: 100%;
 	}
+	
 	&-company {
 		flex-grow: 1;
-		padding: 40px 65px;
+		padding: 40px 65px 40px 415px;
 		width: 550px;
 		background-color: $white;
 		@media screen and (max-width: 1024px) {
 			width: 100%;
 		}
+		
 		&-link {
 			display: none;
-			 &.active {
-				 display: block;
-			 }
+			
+			&.active {
+				display: block;
+			}
+			
 			& a {
 				display: inline-flex;
 				align-items: center;
 				grid-gap: 10px;
 			}
 		}
+		
 		&-wrapper {
 			margin-top: 60px;
-		 & h1 {
-			 margin-bottom: 7px;
-		 }
+			
+			& h1 {
+				margin-bottom: 7px;
+			}
 		}
+		
 		&-form {
 			& button {
 				grid-gap: 10px;
@@ -38,13 +46,17 @@
 		}
 	}
 }
+
 .form-list {
 	margin-top: 40px;
+	
 	&-item {
 		margin-bottom: 30px;
+		
 		&:last-child {
 			margin-bottom: 50px;
 		}
+		
 		& label {
 			margin-bottom: 8px;
 			display: inline-block;

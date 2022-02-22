@@ -8,8 +8,9 @@
 		flex-direction: column;
 		height: auto;
 	}
+	
 	&-box {
-		padding: 40px 60px 0 65px;
+		padding: 40px 60px 0 415px;
 		background-color: $white;
 		width: 550px;
 		@media screen and (max-width: 1400px) {
@@ -19,29 +20,36 @@
 		@media screen and (max-width: 768px) {
 			padding: 40px 15px 60px 15px;
 		}
+		
 		&-nav {
 			margin-bottom: 60px;
 			@media screen and (max-width: 580px) {
 				margin-bottom: 25px;
 			}
 		}
+		
 		&-title {
 			margin-bottom: 30px;
 		}
+		
 		&-form {
 			& .form-list {
 				margin-bottom: 30px;
+				
 				&-item {
 					margin-bottom: 20px;
+					
 					&:last-child {
 						margin-bottom: 0;
 					}
+					
 					& label {
 						margin-bottom: 8px;
 						display: block;
 					}
 				}
 			}
+			
 			& .form-btn {
 				padding: 60px 0;
 				border-top: 1px solid $purple;
@@ -52,23 +60,28 @@
 				}
 			}
 		}
+		
 		&.password {
 			width: auto;
 			background-color: $white2;
 		}
+		
 		&-text {
 			margin-bottom: 40px;
 			@media screen and (max-width: 580px) {
 				margin-bottom: 25px;
 			}
 		}
+		
 		&-wrapper {
 			display: flex;
 			flex-wrap: wrap-reverse;
 			grid-gap: 30px;
 			justify-content: space-between;
+			
 			& .box-text {
 				width: 300px;
+				
 				& ul {
 					margin-top: 7px;
 					padding-left: 30px;
@@ -77,6 +90,7 @@
 		}
 	}
 }
+
 .content-box + .content-box {
 	padding: 132px 80px 0 80px;
 	@media screen and (max-width: 1400px) {
@@ -89,9 +103,11 @@
 	@media screen and (max-width: 580px) {
 		padding: 40px 15px 108px 15px;
 	}
+	
 	& .content-box-title {
 		margin-bottom: 10px;
 	}
+	
 	& .content-box-form {
 		width: 400px;
 		@media screen and (max-width: 1400px) {

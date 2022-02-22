@@ -1,25 +1,115 @@
 .box-container {
 
 }
-.add {
+
+.one {
 	display: flex;
 	@media screen and (max-width: 1024px) {
 		width: 100%;
 	}
+	
 	&-company {
-		flex-grow: 1;
-		padding: 40px 65px;
+		padding: 40px 65px 40px 415px;
 		width: 100%;
 		background-color: $white;
+		
 		&-link {
 			display: none;
+			
 			&.active {
 				display: block;
 			}
+			
 			& a {
 				display: inline-flex;
 				align-items: center;
 				grid-gap: 10px;
+			}
+		}
+		
+		&-wrapper {
+			display: flex;
+			grid-gap: 75px;
+			
+		}
+		&-card {
+			display: flex;
+			flex-direction: column;
+			width:350px;
+			& .card {
+				&-title {
+					margin-bottom: 8px;
+				}
+				&-sub-title {
+					margin-bottom: 8px;
+				}
+				&-img {
+					width:350px;
+					height:210px;
+					object-fit: contain;
+				}
+				&-wrapper {
+					margin-top: 25px;
+					display: flex;
+					align-items: flex-end;
+					&-select {
+					
+					}
+					&-btn {
+					
+					}
+				}
+			}
+		}
+		
+		&-text {
+			& .text-wrapper {
+				display: flex;
+				align-items: center;
+				&-box {
+					display: flex;
+					align-items: center;
+				}
+			}
+		}
+		
+		& .company-philter {
+			display: flex;
+			align-items: center;
+			flex-direction: row;
+			flex-wrap: wrap;
+			grid-gap: 80px;
+			@media screen and (max-width: 768px) {
+				grid-gap: 20px;
+			}
+			
+			&-select {
+				width: 190px;
+				@media screen and (max-width: 425px) {
+					width: 100%;
+				}
+				
+				& .select2-container {
+					width: 100% !important;
+				}
+			}
+			
+			&-btn {
+				background-color: $white2;
+				padding: 8px;
+				display: flex;
+				align-items: center;
+				grid-gap: 8px;
+				border: none;
+				font-family: $WS-r;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 21px;
+				color: #573CDA;
+				
+				&:hover i:before {
+					transform: scale(1.1);
+				}
 			}
 		}
 	}

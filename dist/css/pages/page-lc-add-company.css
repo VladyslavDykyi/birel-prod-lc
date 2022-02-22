@@ -12,7 +12,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
+  position: fixed;
   z-index: 20;
 }
 
@@ -135,7 +135,7 @@
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  padding: 40px 65px;
+  padding: 40px 65px 40px 415px;
   width: 550px;
   background-color: #fff;
 }
@@ -195,7 +195,6 @@
     min-width: 100vw;
     overflow-x: hidden;
     overflow-y: auto;
-    position: fixed;
     background-color: #2A206A;
   }
 
