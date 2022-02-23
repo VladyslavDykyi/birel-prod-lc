@@ -13,6 +13,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   position: fixed;
+  left: 0;
   z-index: 20;
 }
 
@@ -133,7 +134,7 @@
 }
 
 .content-box {
-  padding: 40px 60px 0 415px;
+  padding: 40px 65px 0;
   background-color: #fff;
   width: 550px;
 }

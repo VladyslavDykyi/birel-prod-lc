@@ -126,12 +126,16 @@ label {
 .box-container {
 	display: flex;
 	background-color: $white2;
+	padding-left: 350px;
+	@media screen and (max-width: 1024px) {
+		padding-left: 0;
+	}
 }
 
 
 
 #tabs {
-	.nav-tabs {
+	& .nav-tabs {
 		display: flex;
 		justify-content: space-between;
 		
@@ -152,6 +156,13 @@ label {
 				border-bottom: 1px solid transparent;
 				cursor: auto;
 			}
+		}
+		
+	}
+	& .content-t {
+		display: none;
+		&.active {
+			display: block;
 		}
 	}
 }

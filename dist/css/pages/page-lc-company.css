@@ -13,6 +13,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   position: fixed;
+  left: 0;
   z-index: 20;
 }
 
@@ -128,7 +129,7 @@
 .company {
   background-color: #fff;
   width: 100%;
-  padding: 45px 65px 45px 415px;
+  padding: 40px 65px;
 }
 
 .company-wrapper {
