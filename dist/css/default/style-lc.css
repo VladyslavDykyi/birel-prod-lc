@@ -1702,7 +1702,7 @@ label {
   }
 
   .bg-site {
-    padding: 60px 0 0;
+    padding: 60px 0 60px;
   }
 
   .checkbox-ios .checkbox-ios-switch {

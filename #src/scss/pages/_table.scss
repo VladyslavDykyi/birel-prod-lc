@@ -1,61 +1,88 @@
 .table {
 	width: 100%;
+	min-width: 1380px;
 	&-head {
 		& .head-row {
-			background-color: $purple3;
+			
+			
 			&-item {
 				text-align: left;
-				padding: 8px 12px;
-				font-family: $WS-sb;
-				font-weight: 600;
-				font-size: 16px;
-				line-height: 16px;
-				color: $white;
 				border-left: 1px solid $white;
 				border-right: 1px solid $white;
-				&:first-child {
+				border-top: 4px solid white;
+				border-bottom: 4px solid white;
+				vertical-align:middle;
+				&:first-child div {
 					border-radius: 6px 0 0 6px;
 					text-align: right;
 				}
-				&:last-child {
+				
+				&:last-child div {
 					border-radius: 0 6px 6px 0;
+				}
+				& div {
+					padding: 8px 12px;
+					height: 40px;
+					font-family: $WS-sb;
+					font-weight: 600;
+					font-size: 16px;
+					line-height: 24px;
+					color: $white;
+					background-color: $purple3;
 				}
 			}
 		}
 	}
+	
 	&-body {
 		& .body-row {
-			background-color: #C6F7CE;
 			&-item {
-				text-align: left;
-				vertical-align: middle;
-				padding: 8px 12px;
-				font-family: $WS-r;
-				font-weight: 400;
-				font-size: 16px;
-				line-height: 24px;
-				color: $purple3;
-				&:first-child {
+				border-top: 4px solid white;
+				border-bottom: 4px solid white;
+				vertical-align:middle;
+				&:first-child div {
 					border-radius: 6px 0 0 6px;
 					text-align: right;
 				}
-				&:last-child {
+				
+				&:last-child div {
 					border-radius: 0 6px 6px 0;
 				}
 				& .reset-btn {
 					width: 24px;
 					height: 24px;
-					&.icons {
-						width: 30px;
-						height: 30px;
-					}
-					& .tree-dots {
 					
+					& .tree-dots {
+						display: block;
 					}
+				}
+				&.center div {
+					display: flex;
+					justify-content: center;
+				}
+				&.center div button {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+				& div {
+					height: 32px;
+					text-align: left;
+					vertical-align: middle;
+					padding: 4px 12px;
+					font-family: $WS-r;
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 24px;
+					color: $purple3;
+					background-color: #C6F7CE;
+					
 				}
 			}
 			&.ask {
-				background-color: #F8D2D2;
+				& div {
+					background-color: #F8D2D2;
+				}
 			}
 		}
 	}
