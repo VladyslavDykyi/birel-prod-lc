@@ -222,6 +222,93 @@
   background-color: #F8D2D2;
 }
 
+.table-two .table-head .head-row-item {
+  text-align: left;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  vertical-align: middle;
+}
+
+.table-two .table-head .head-row-item:first-child div {
+  border-radius: 6px 0 0 6px;
+  text-align: right;
+}
+
+.table-two .table-head .head-row-item:last-child div {
+  border-radius: 0 6px 6px 0;
+}
+
+.table-two .table-head .head-row-item div {
+  padding: 8px 12px;
+  height: 40px;
+  font-family: "WorkSans-SemiBold";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  background-color: #2A206A;
+}
+
+.table-two .table-body .body-row-item {
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  vertical-align: middle;
+}
+
+.table-two .table-body .body-row-item:first-child div {
+  border-radius: 6px 0 0 6px;
+  text-align: right;
+}
+
+.table-two .table-body .body-row-item:last-child div {
+  border-radius: 0 6px 6px 0;
+}
+
+.table-two .table-body .body-row-item .reset-btn {
+  width: 24px;
+  height: 24px;
+}
+
+.table-two .table-body .body-row-item .reset-btn .tree-dots {
+  display: block;
+}
+
+.table-two .table-body .body-row-item.center div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.table-two .table-body .body-row-item.center div button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.table-two .table-body .body-row-item div {
+  height: 32px;
+  text-align: left;
+  vertical-align: middle;
+  padding: 4px 12px;
+  font-family: "WorkSans-Regular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2A206A;
+  background-color: #fff;
+}
+
 .one {
   display: -webkit-box;
   display: -ms-flexbox;

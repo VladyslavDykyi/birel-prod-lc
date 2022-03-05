@@ -628,10 +628,6 @@ label {
   background-image: url(https://cdn.glitch.com/d6162378-5823-4160-a555-3d9789bd2b92%2Fcheck.svg?1550563475518);
 }
 
-/* Focused */
-
-/* Disabled */
-
 .checkbox-ios {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -731,6 +727,11 @@ label {
 .ios-p {
   /* Hover */
   /* Disabled */
+}
+
+.ios-p .checkbox-ios {
+  height: 24px;
+  line-height: 24px;
 }
 
 .ios-p .checkbox-ios .checkbox-ios-switch {
@@ -1456,6 +1457,10 @@ label {
 
 .w170 {
   width: 170px;
+}
+
+.w210 {
+  width: 210px;
 }
 
 .w265 {

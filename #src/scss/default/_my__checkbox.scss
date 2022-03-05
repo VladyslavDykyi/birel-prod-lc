@@ -1,11 +1,8 @@
 /* Option */
-
 .option {
 	display: inline-flex;
 }
-
 /* Check */
-
 .check {
 	padding-left: 30px;
 	& .text-r:hover {
@@ -18,7 +15,6 @@
 		cursor: pointer;
 	}
 }
-
 .check__input {
 	position: absolute;
 	width: 1px !important;
@@ -26,7 +22,6 @@
 	overflow: hidden;
 	clip: rect(0 0 0 0);
 }
-
 .check__box {
 	position: absolute;
 	width: 24px;
@@ -51,9 +46,7 @@
 		background-color: $grey-lite;
 	}
 }
-
 /* Checked */
-
 .check__input:checked + .check__box:before {
 	content: '';
 	display: block;
@@ -69,22 +62,6 @@
 	background-position: 50% 50%;
 	background-image: url(https://cdn.glitch.com/d6162378-5823-4160-a555-3d9789bd2b92%2Fcheck.svg?1550563475518);
 }
-
-/* Focused */
-
-// .check__input:focus + .check__box {
-// 	box-shadow: 0 0 0 0.1em #7a7a7a, 0 0 0 0.2em #7a7a7a;
-// }
-
-/* Disabled */
-
-// .check__input:disabled + .check__box {
-// 	box-shadow: 0 0 0 0.1em #9b9b9b;
-// }
-//
-//.check__input:checked:disabled + .check__box {
-//	background-color:  $white;
-//}
 .checkbox-ios {
 	display: flex;
 	align-items: center;
@@ -150,13 +127,11 @@
 		transform:translateX(17px);
 	}
 }
-
 /* Hover */
 .checkbox-ios input[type="checkbox"]:not(:disabled) + .checkbox-ios-switch {
 	cursor: pointer;
 	border-color: $purple;
 }
-
 /* Disabled */
 .checkbox-ios input[type=checkbox]:disabled + .checkbox-ios-switch {
 	filter: grayscale(70%);
@@ -166,31 +141,33 @@
 	background: #eee;
 }
 .ios-p {
-	.checkbox-ios .checkbox-ios-switch {
+	& .checkbox-ios {
+		height: 24px;
+		line-height: 24px;
+	}
+	& .checkbox-ios .checkbox-ios-switch {
 		border: 2px solid $purple;
 	}
-	.checkbox-ios .checkbox-ios-switch:before {
+	& .checkbox-ios .checkbox-ios-switch:before {
 		background: $purple3;
 	}
-	.checkbox-ios input[type=checkbox]:checked + .checkbox-ios-switch {
+	& .checkbox-ios input[type=checkbox]:checked + .checkbox-ios-switch {
 		background: transparent;
 	}
-	.checkbox-ios input[type=checkbox]:checked + .checkbox-ios-switch:before {
+	& .checkbox-ios input[type=checkbox]:checked + .checkbox-ios-switch:before {
 		background: $purple3;
 	}
-	
 	/* Hover */
-	.checkbox-ios input[type="checkbox"]:not(:disabled) + .checkbox-ios-switch {
+	& .checkbox-ios input[type="checkbox"]:not(:disabled) + .checkbox-ios-switch {
 		cursor: pointer;
 		border-color: $purple3;
 	}
-	
 	/* Disabled */
-	.checkbox-ios input[type=checkbox]:disabled + .checkbox-ios-switch {
+	& .checkbox-ios input[type=checkbox]:disabled + .checkbox-ios-switch {
 		filter: grayscale(70%);
 		border-color: rgba(0, 0, 0, .1);
 	}
-	.checkbox-ios input[type=checkbox]:disabled + .checkbox-ios-switch:before {
+	& .checkbox-ios input[type=checkbox]:disabled + .checkbox-ios-switch:before {
 		background: #eee;
 	}
 }
