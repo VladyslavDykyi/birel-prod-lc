@@ -242,13 +242,6 @@ i {
   transition: all 0.2s linear;
 }
 
-i::after,
-i::before {
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-}
-
 label {
   position: relative;
 }
@@ -1399,6 +1392,39 @@ label {
   text-transform: uppercase;
 }
 
+.tippy-box[data-theme~="my"] {
+  background: #fff;
+  border: 1px solid #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+.tippy-popper {
+  -webkit-filter: drop-shadow(3px 3px 4px rgba(23, 17, 50, 0.25));
+          filter: drop-shadow(3px 3px 4px rgba(23, 17, 50, 0.25));
+}
+
+.tippy-tooltip[data-placement^=left] > .tippy-arrow {
+  border-left-color: #fff;
+  border-width: 16px 0 16px 16px;
+  right: -16px;
+}
+
+.tippy-tooltip {
+  background: #fff;
+  left: -20px !important;
+}
+
+.tippy-content {
+  font-family: "WorkSans-Regular";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #573CDA;
+  padding: 10px;
+}
+
 .white {
   color: #fff;
 }
@@ -1517,6 +1543,7 @@ label {
 }
 
 .header-box {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1670,6 +1697,34 @@ label {
   color: #FFFFFF;
 }
 
+.notification {
+  display: none;
+  position: absolute;
+  top: 72px;
+  left: 415px;
+  background: #C0BCD699;
+  -webkit-box-shadow: 3px 3px 8px #1711323F;
+          box-shadow: 3px 3px 8px #1711323F;
+  border-radius: 6px;
+  padding: 0 8px;
+}
+
+.notification p {
+  padding: 7px 0;
+}
+
+.notification .reset-btn:hover i:before {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.notification.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 /*--- дефолтные стили по сайту ---*/
 
 /*--- дефолтные стили по сайту ---*/
@@ -1719,6 +1774,11 @@ label {
   .header-user {
     margin-left: 0;
   }
+
+  .notification {
+    left: 40px;
+    top: 52px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1758,6 +1818,11 @@ label {
   .header-user .menu-box {
     left: auto;
     right: -15px;
+  }
+
+  .notification {
+    left: 20px;
+    margin-right: 20px;
   }
 }
 

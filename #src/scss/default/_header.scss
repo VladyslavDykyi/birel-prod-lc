@@ -9,6 +9,7 @@
 		padding: 9px 0;
 	}
 	&-box {
+		position: relative;
 		display: flex;
 		align-items: center;
 		@media screen and (max-width: 1024px) {
@@ -164,5 +165,32 @@
 		height: 20px;
 		font-size: 12px;
 		font-weight: 400;
+	}
+}
+.notification {
+	display: none;
+	position: absolute;
+	top: 72px;
+	left: 415px;
+	background: #C0BCD699;
+	box-shadow: 3px 3px 8px #1711323F;
+	border-radius: 6px;
+	padding: 0 8px;
+	@media screen and (max-width: 1024px) {
+		left: 40px;
+		top: 52px;
+	}
+	@media screen and (max-width: 768px) {
+		left: 20px;
+		margin-right: 20px;
+	}
+	& p {
+		padding: 7px 0;
+	}
+	& .reset-btn:hover i:before {
+		transform: scale(1.1);
+	}
+	&.active {
+		display: flex;
 	}
 }

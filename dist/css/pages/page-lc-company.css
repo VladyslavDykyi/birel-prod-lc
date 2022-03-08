@@ -284,16 +284,6 @@
   grid-gap: 40px;
 }
 
-.company-list.content-t {
-  display: none;
-}
-
-.company-list.content-t.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .company-item {
   background-color: #fff;
   border: 1px solid #AB9DEC;
@@ -304,9 +294,14 @@
 
 .company-item-img {
   max-height: 118px;
+  min-height: 118px;
   -o-object-fit: contain;
      object-fit: contain;
-  margin-bottom: 20px;
+}
+
+.company-item-company {
+  display: block;
+  margin-top: 20px;
 }
 
 .company-item-tech {
@@ -378,6 +373,12 @@
 
 .company-item-drop p {
   margin-bottom: 5px;
+}
+
+#tabs .company-list.content-t.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media screen and (max-width: 1680px) {
