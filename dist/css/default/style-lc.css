@@ -1698,7 +1698,7 @@ label {
 }
 
 .notification {
-  display: none;
+  opacity: 0;
   position: absolute;
   top: 72px;
   left: 415px;
@@ -1707,6 +1707,16 @@ label {
           box-shadow: 3px 3px 8px #1711323F;
   border-radius: 6px;
   padding: 0 8px;
+  z-index: 100;
+  -webkit-transform: translateY(-130px);
+      -ms-transform: translateY(-130px);
+          transform: translateY(-130px);
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .notification p {
@@ -1720,9 +1730,10 @@ label {
 }
 
 .notification.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
 }
 
 /*--- дефолтные стили по сайту ---*/

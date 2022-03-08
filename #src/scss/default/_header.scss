@@ -168,7 +168,7 @@
 	}
 }
 .notification {
-	display: none;
+	opacity: 0;
 	position: absolute;
 	top: 72px;
 	left: 415px;
@@ -176,6 +176,10 @@
 	box-shadow: 3px 3px 8px #1711323F;
 	border-radius: 6px;
 	padding: 0 8px;
+	z-index: 100;
+	transform: translateY(-130px);
+	transition: all 0.2s linear;
+	display: flex;
 	@media screen and (max-width: 1024px) {
 		left: 40px;
 		top: 52px;
@@ -191,6 +195,7 @@
 		transform: scale(1.1);
 	}
 	&.active {
-		display: flex;
+		opacity: 1;
+		transform: translateY(0);
 	}
 }
