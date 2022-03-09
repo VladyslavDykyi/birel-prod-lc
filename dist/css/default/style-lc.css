@@ -1108,6 +1108,143 @@ label {
           transform: rotate(-45deg);
 }
 
+.popUp-background1:before {
+  content: '';
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  z-index: 100;
+  background: #573CDA;
+  opacity: 0.6;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.popUp-message-manager {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: calc(50% - 350px);
+  left: calc(50% - 250px);
+  width: 500px;
+  height: 700px;
+  padding: 50px;
+  background-color: #fff;
+}
+
+.popUp-close {
+  position: relative;
+}
+
+.popUp-close .reset-btn {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+}
+
+.popUp-close .reset-btn i:before {
+  background-size: cover;
+}
+
+.popUp-close .reset-btn:hover i:before {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.popUp-message-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.popUp-message-form h2 {
+  margin-bottom: 10px;
+}
+
+.popUp-message-form p {
+  margin-bottom: 10px;
+}
+
+.popUp-message-form label {
+  margin: 20px 0 8px;
+}
+
+.popUp-message-form .select2-container--my .select2-selection--single {
+  border-color: #C0BCD6;
+}
+
+.popUp-message-form textarea {
+  margin: 20px 0 45px;
+  background: #fff;
+  width: 100%;
+  height: 225px;
+  border: 1px solid #C0BCD6;
+  padding: 10px;
+  font-family: "WorkSans-Regular";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #573CDA;
+}
+
+.popUp-message-form textarea::-webkit-input-placeholder {
+  font-family: "WorkSans-Regular";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #C0BCD6;
+}
+
+.popUp-message-form textarea::-moz-placeholder {
+  font-family: "WorkSans-Regular";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #C0BCD6;
+}
+
+.popUp-message-form textarea:-ms-input-placeholder {
+  font-family: "WorkSans-Regular";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #C0BCD6;
+}
+
+.popUp-message-form textarea::-ms-input-placeholder {
+  font-family: "WorkSans-Regular";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #C0BCD6;
+}
+
+.popUp-message-form textarea::placeholder {
+  font-family: "WorkSans-Regular";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #C0BCD6;
+}
+
+.popUp-background1 {
+  display: none;
+}
+
+.popUp-background1.active {
+  display: block;
+}
+
+.popUp-background1.active .popUp-message-manager {
+  display: block;
+}
+
 .form_radio {
   margin-left: 4px;
 }
