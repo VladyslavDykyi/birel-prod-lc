@@ -1,4 +1,4 @@
-import {createPopUp} from '../default/module-lc.js';
+import {createPopUp} from './module-lc.js';
 createPopUp('#message-manager-1', "#popup-1");
 createPopUp('#message-manager-2', "#popup-2");
 
