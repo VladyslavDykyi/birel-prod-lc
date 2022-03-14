@@ -98,6 +98,7 @@
 .table-two {
 	width: 100%;
 	min-width: 1380px;
+	
 	.table-head {
 		& .head-row {
 			&-item {
@@ -130,6 +131,7 @@
 			}
 		}
 	}
+	
 	.table-body2 {
 		& .body-row {
 			&-item {
@@ -138,8 +140,20 @@
 					text-align: right;
 					
 				}
+				
 				&:last-child > div {
+					
+					&.arrow-icon-purple {
+						cursor: pointer;
+						&:hover {
+							&:before {
+								transform: rotate(-45deg) scale(1.4);
+							}
+						}
+					}
+					
 				}
+				
 				& > div {
 					height: 32px;
 					text-align: left;
@@ -151,6 +165,7 @@
 					line-height: 24px;
 					color: $purple3;
 				}
+				
 				&:first-child > ul {
 					padding-left: 70px;
 				}
@@ -158,52 +173,77 @@
 					padding: 4px 0;
 				}
 			}
+			
 			&.active td {
 				background: #F6F4FF;
+				
 				&:first-child {
 					border-radius: 6px 0 0 0;
 				}
+				
 				&:last-child {
 					border-radius: 0 6px 0 0;
-					& .arrow-icon-purple:before {
-						transform: rotate(135deg);
+					&:hover {
+						& .arrow-icon-purple {
+							&:before {
+								transform: rotate(135deg) scale(1.4);
+							}
+						}
+					}
+					& .arrow-icon-purple {
+						&:before {
+							transform: rotate(135deg);
+							
+						}
 					}
 				}
 			}
+			
 			&.active + tr td {
 				background: #F6F4FF;
+				
 				&:first-child {
-					border-radius: 0 0 0 6px ;
+					border-radius: 0 0 0 6px;
 				}
+				
 				&:last-child {
 					border-radius: 0 0 6px 0;
 				}
 			}
+			
 			&.active + tr td {
 				background: #F6F4FF;
+				
 				&:first-child {
-					border-radius: 0 0 0 6px ;
+					border-radius: 0 0 0 6px;
 				}
+				
 				&:last-child {
 					border-radius: 0 0 6px 0;
 				}
 			}
+			
 			&.active + .body-row-info {
 				display: table-row;
 			}
+			
 			&-info {
 				display: none;
 			}
 		}
 	}
 }
+
 .list-t {
-	border-top:1px solid #573CDA;
+	border-top: 1px solid #573CDA;
+	
 	&-item {
 		margin-bottom: 25px;
+		
 		&:last-child {
 			margin-bottom: 0;
 		}
+		
 		& div {
 			padding: 4px 12px;
 			font-family: $WS-r;
@@ -211,9 +251,11 @@
 			font-size: 14px;
 			line-height: 20px;
 		}
+		
 		& .designation-name {
 			color: #515994;
 		}
+		
 		& .designation-meanings {
 			color: #2A206A;
 		}

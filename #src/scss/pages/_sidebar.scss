@@ -108,20 +108,47 @@
 	
 	&-btn {
 		padding: 15px 105px 15px 65px;
-		
 		background-color: $purple;
 		@media screen and (max-width: 1024px) {
 			background-color: $purple3;
 			padding: 15px 20px 15px 20px;
 		}
-		
 		& button {
 			display: flex;
 			align-items: center;
 			text-align: left;
-			
 			& i {
 				flex: 0 0 55px;
+			}
+			& span {
+				color: $white;
+			}
+		}
+		&.grey {
+			padding: 15px 85px 15px 65px;
+			background-color: #C0BCD699;
+			@media screen and (max-width: 1024px) {
+				padding: 15px 20px 15px 20px;
+				background-color: $purple3;
+			}
+			& button {
+				& .icon-massage-text-white {
+					display: none;
+					@media screen and (max-width: 1024px) {
+						display: block;
+					}
+				}
+				& .icon-massage-text-purple {
+					@media screen and (max-width: 1024px) {
+						display: none;
+					}
+				}
+				& span {
+					color: $purple;
+					@media screen and (max-width: 1024px) {
+						color: $white;
+					}
+				}
 			}
 		}
 	}

@@ -113,6 +113,23 @@
           flex: 0 0 55px;
 }
 
+.sidebar-btn button span {
+  color: #fff;
+}
+
+.sidebar-btn.grey {
+  padding: 15px 85px 15px 65px;
+  background-color: #C0BCD699;
+}
+
+.sidebar-btn.grey button .icon-massage-text-white {
+  display: none;
+}
+
+.sidebar-btn.grey button span {
+  color: #573CDA;
+}
+
 .sidebar-list {
   padding: 15px 0 15px 70px;
   background-color: #2A206A;
@@ -261,6 +278,16 @@
   text-align: right;
 }
 
+.table-two .table-body2 .body-row-item:last-child > div.arrow-icon-purple {
+  cursor: pointer;
+}
+
+.table-two .table-body2 .body-row-item:last-child > div.arrow-icon-purple:hover:before {
+  -webkit-transform: rotate(-45deg) scale(1.4);
+      -ms-transform: rotate(-45deg) scale(1.4);
+          transform: rotate(-45deg) scale(1.4);
+}
+
 .table-two .table-body2 .body-row-item > div {
   height: 32px;
   text-align: left;
@@ -291,6 +318,12 @@
 
 .table-two .table-body2 .body-row.active td:last-child {
   border-radius: 0 6px 0 0;
+}
+
+.table-two .table-body2 .body-row.active td:last-child:hover .arrow-icon-purple:before {
+  -webkit-transform: rotate(135deg) scale(1.4);
+      -ms-transform: rotate(135deg) scale(1.4);
+          transform: rotate(135deg) scale(1.4);
 }
 
 .table-two .table-body2 .body-row.active td:last-child .arrow-icon-purple:before {
@@ -667,6 +700,23 @@
   .sidebar-btn {
     background-color: #2A206A;
     padding: 15px 20px 15px 20px;
+  }
+
+  .sidebar-btn.grey {
+    padding: 15px 20px 15px 20px;
+    background-color: #2A206A;
+  }
+
+  .sidebar-btn.grey button .icon-massage-text-white {
+    display: block;
+  }
+
+  .sidebar-btn.grey button .icon-massage-text-purple {
+    display: none;
+  }
+
+  .sidebar-btn.grey button span {
+    color: #fff;
   }
 
   .sidebar-list {

@@ -7,14 +7,34 @@
 	left: 0;
 	width: 100vw;
 	z-index: 20;
-	@media screen and (max-width: 1024px){
+	@media screen and (max-width: 1024px) {
 		display: block;
 		box-shadow: $box-shadow5;
 	}
 	& .header-list {
-		@media screen and (max-width: 1024px){
+		@media screen and (max-width: 1024px) {
 			display: flex;
 			justify-content: space-evenly;
+		}
+	}
+}
+
+.bg-purple {
+	&:before {
+		content: '';
+		width: 100vw;
+		height: 100vh;
+		display: none;
+		z-index: 100;
+		background: $purple;
+		opacity: 0.6;
+		position: fixed;
+		top: 0;
+		left: 0;
+	}
+	&.active {
+		&:before {
+			display: block;
 		}
 	}
 }

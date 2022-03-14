@@ -1,25 +1,24 @@
-.popUp-background1:before {
-	content: '';
-	width: 100vw;
-	height: 100vh;
-	display: block;
-	z-index: 100;
-	background: $purple;
-	opacity: 0.6;
-	position: fixed;
-	top: 0;
-	left: 0;
-}
+
 .popUp-message-manager {
 	display: none;
 	position: fixed;
-	z-index: 100;
+	z-index: 110;
 	top: calc(50% - 350px);
 	left: calc(50% - 250px);
 	width: 500px;
 	height: 700px;
 	padding: 50px;
 	background-color: $white;
+	@media screen and (max-width: 580px) {
+		width: 100%;
+		height: 100%;
+		z-index: 1000;
+		top: calc(50% - 50%);
+		left: calc(50% - 50%);
+	}
+	&.active {
+		display: block;
+	}
 }
 .popUp-close {
 	position: relative;
@@ -41,6 +40,7 @@
 	flex-direction: column;
 	& h2 {
 		margin-bottom: 10px;
+		text-transform: capitalize;
 	}
 	& p {
 		margin-bottom: 10px;
@@ -70,14 +70,13 @@
 			line-height: 20px;
 			color: $grey-lite;
 		}
-	}
-}
-.popUp-background1 {
-	display: none;
-	&.active {
-		display: block;
-		& .popUp-message-manager {
-			display: block;
+		
+		&:focus {
+			border-color: $purple;
+		}
+		
+		&:active {
+			border-color: $purple;
 		}
 	}
 }

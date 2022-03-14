@@ -1,5 +1,4 @@
 
-
 function openMenuTr(container) {
 	if (typeof container === 'string') {
 		container = document.querySelector(container);
