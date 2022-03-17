@@ -244,7 +244,7 @@
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			
+			margin-bottom: 10px;
 			& button:hover i:before {
 				transform: scale(1.1);
 			}
@@ -276,6 +276,15 @@
 			& p {
 				margin-bottom: 5px;
 			}
+		}
+	}
+	&-text-bot {
+		margin-top: 30px;
+		padding: 30px;
+		background: #F6F4FF;
+		& > p {
+			font-size: 14px;
+			line-height: 18px;
 		}
 	}
 }

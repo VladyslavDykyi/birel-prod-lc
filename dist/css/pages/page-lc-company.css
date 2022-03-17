@@ -359,6 +359,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .company-item-watch button:hover i:before {
@@ -390,6 +391,17 @@
 
 .company-item-drop p {
   margin-bottom: 5px;
+}
+
+.company-text-bot {
+  margin-top: 30px;
+  padding: 30px;
+  background: #F6F4FF;
+}
+
+.company-text-bot > p {
+  font-size: 14px;
+  line-height: 18px;
 }
 
 #tabs .company-list.content-t.active {
