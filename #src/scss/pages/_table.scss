@@ -92,6 +92,18 @@
 				background-color: #F8D2D2;
 			}
 		}
+		
+		&.new {
+			& div {
+				background-color: #C0BCD699;
+			}
+		}
+		
+		&.history {
+			& div {
+				background-color: #C6F6CE99;
+			}
+		}
 	}
 }
 

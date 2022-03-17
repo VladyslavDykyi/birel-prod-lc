@@ -943,6 +943,33 @@ label {
           transform: rotate(-45deg);
 }
 
+.tree-dots {
+  width: 4px;
+  height: 4px;
+  background-color: #2A206A;
+  border-radius: 2px;
+  position: relative;
+}
+
+.tree-dots:before,
+.tree-dots:after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  display: block;
+  background-color: #2A206A;
+  border-radius: 2px;
+}
+
+.tree-dots:after {
+  left: -8px;
+}
+
+.tree-dots:before {
+  right: -8px;
+}
+
 .i-f {
   border: 1px solid #C0BCD6;
   padding: 10px 8px;
