@@ -119,7 +119,6 @@ label {
 }
 
 .box-container {
-	display: flex;
 	background-color: $white2;
 	padding-left: 350px;
 	@media screen and (max-width: 1024px) {
@@ -128,33 +127,31 @@ label {
 }
 
 
-
+#tabs2,
 #tabs {
 	& .nav-tabs {
 		display: flex;
 		justify-content: space-between;
-		
 		& .f18-l32 {
 			@media screen and (max-width: 580px) {
 				font-size: 12px;
 				line-height: 16px;
 			}
 		}
-		
-		& .tab-n {
+		& .tab-n,
+			.tab-n2 {
 			opacity: 0.5;
 			border-bottom: 1px solid $purple;
 			cursor: pointer;
-			
 			&.active {
 				opacity: 1;
 				border-bottom: 1px solid transparent;
 				cursor: auto;
 			}
 		}
-		
 	}
-	& .content-t {
+	& .content-t,
+	.content-t2 {
 		display: none;
 		&.active {
 			display: block;

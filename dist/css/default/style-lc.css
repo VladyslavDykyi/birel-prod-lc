@@ -267,13 +267,11 @@ label {
 }
 
 .box-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   background-color: #F6F4FF;
   padding-left: 350px;
 }
 
+#tabs2 .nav-tabs,
 #tabs .nav-tabs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -283,23 +281,35 @@ label {
           justify-content: space-between;
 }
 
-#tabs .nav-tabs .tab-n {
+#tabs2 .nav-tabs .tab-n,
+#tabs2 .nav-tabs .tab-n2,
+#tabs .nav-tabs .tab-n,
+#tabs .nav-tabs .tab-n2 {
   opacity: 0.5;
   border-bottom: 1px solid #573CDA;
   cursor: pointer;
 }
 
-#tabs .nav-tabs .tab-n.active {
+#tabs2 .nav-tabs .tab-n.active,
+#tabs2 .nav-tabs .tab-n2.active,
+#tabs .nav-tabs .tab-n.active,
+#tabs .nav-tabs .tab-n2.active {
   opacity: 1;
   border-bottom: 1px solid transparent;
   cursor: auto;
 }
 
-#tabs .content-t {
+#tabs2 .content-t,
+#tabs2 .content-t2,
+#tabs .content-t,
+#tabs .content-t2 {
   display: none;
 }
 
-#tabs .content-t.active {
+#tabs2 .content-t.active,
+#tabs2 .content-t2.active,
+#tabs .content-t.active,
+#tabs .content-t2.active {
   display: block;
 }
 
@@ -2019,6 +2029,7 @@ label {
 }
 
 @media screen and (max-width: 580px) {
+  #tabs2 .nav-tabs .f18-l32,
   #tabs .nav-tabs .f18-l32 {
     font-size: 12px;
     line-height: 16px;
