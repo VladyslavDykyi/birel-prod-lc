@@ -1695,6 +1695,10 @@ label {
   height: 49px;
 }
 
+.h235 {
+  height: 235px;
+}
+
 .footer-bg {
   display: none;
   background-color: #573CDA;

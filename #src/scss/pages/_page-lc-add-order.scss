@@ -1,0 +1,54 @@
+.add-order {
+	background-color: $white;
+	width: 100%;
+	padding: 40px 65px;
+	@media screen and (max-width: 1540px) {
+		padding: 35px 25px;
+	}
+	@media screen and (max-width: 1024px) {
+		padding: 45px 40px;
+	}
+	@media screen and (max-width: 768px) {
+		padding: 35px 20px;
+	}
+	@media screen and (max-width: 580px) {
+		padding: 25px 15px;
+	}
+	& .w400 {
+		@media screen and (max-width: 580px) {
+			width: 100%;
+		}
+	}
+	&-btn {
+		padding-top: 60px;
+		border-top: 1px solid $purple;
+		@media screen and (max-width: 580px) {
+			padding-top: 20px;
+		}
+		& .w265 {
+			@media screen and (max-width: 580px) {
+				width: 100%;
+			}
+		}
+	}
+	& #tabs {
+		& .nav-tabs {
+			
+			& .f18-l32 {
+				@media screen and (max-width: 580px) {
+					font-size: 18px;
+					line-height: 32px;
+				}
+			}
+		}
+		
+	}
+	& .select2-container--my {
+		@media screen and (max-width: 580px) {
+			width: 100% !important;
+		}
+	}
+	& .select2-container--my .select2-selection--single {
+		border-color: #c0bcd6;
+	}
+}
