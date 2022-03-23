@@ -114,6 +114,7 @@
 		@media screen and (max-width: 580px) {
 			max-width: 100%;
 			margin-bottom: 25px;
+			position: static;
 		}
 		
 		& > .nav-tabs {
@@ -181,6 +182,11 @@
 		right: -290px;
 		bottom: 0;
 		width: 260px;
+		@media screen and (max-width: 580px) {
+			position: static;
+			width: 100%;
+			margin: 10px 0;
+		}
 	}
 }
 

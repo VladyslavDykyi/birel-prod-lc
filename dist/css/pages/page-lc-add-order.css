@@ -782,6 +782,7 @@
   .looking-block {
     max-width: 100%;
     margin-bottom: 25px;
+    position: static;
   }
 
   .looking-block-link {
@@ -791,6 +792,12 @@
 
   .looking-block-info {
     max-width: 100%;
+  }
+
+  .looking-prompt {
+    position: static;
+    width: 100%;
+    margin: 10px 0;
   }
 
   .tender {
