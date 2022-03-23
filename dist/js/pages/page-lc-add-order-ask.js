@@ -30,3 +30,5 @@ function bindTabs2(container) {
 }
 bindTabs2('#tabs2');
 bindTabs2('#tabs2-bid');
+bindTabs2('#tabs2-looking');
+bindTabs2('#tabs2-tender');

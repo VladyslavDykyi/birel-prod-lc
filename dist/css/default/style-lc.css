@@ -271,6 +271,7 @@ label {
   padding-left: 350px;
 }
 
+#tabs3 .nav-tabs,
 #tabs2 .nav-tabs,
 #tabs .nav-tabs {
   display: -webkit-box;
@@ -281,6 +282,8 @@ label {
           justify-content: space-between;
 }
 
+#tabs3 .nav-tabs .tab-n,
+#tabs3 .nav-tabs .tab-n2,
 #tabs2 .nav-tabs .tab-n,
 #tabs2 .nav-tabs .tab-n2,
 #tabs .nav-tabs .tab-n,
@@ -290,6 +293,8 @@ label {
   cursor: pointer;
 }
 
+#tabs3 .nav-tabs .tab-n.active,
+#tabs3 .nav-tabs .tab-n2.active,
 #tabs2 .nav-tabs .tab-n.active,
 #tabs2 .nav-tabs .tab-n2.active,
 #tabs .nav-tabs .tab-n.active,
@@ -299,6 +304,8 @@ label {
   cursor: auto;
 }
 
+#tabs3 .content-t,
+#tabs3 .content-t2,
 #tabs2 .content-t,
 #tabs2 .content-t2,
 #tabs .content-t,
@@ -306,6 +313,8 @@ label {
   display: none;
 }
 
+#tabs3 .content-t.active,
+#tabs3 .content-t2.active,
 #tabs2 .content-t.active,
 #tabs2 .content-t2.active,
 #tabs .content-t.active,
@@ -1522,6 +1531,31 @@ label {
   line-height: 16px;
 }
 
+.f14-l16::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.f14-l16::-moz-placeholder {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.f14-l16:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.f14-l16::-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.f14-l16::placeholder {
+  font-size: 14px;
+  line-height: 16px;
+}
+
 .f16-l24 {
   font-size: 16px;
   line-height: 24px;
@@ -2033,6 +2067,7 @@ label {
 }
 
 @media screen and (max-width: 580px) {
+  #tabs3 .nav-tabs .f18-l32,
   #tabs2 .nav-tabs .f18-l32,
   #tabs .nav-tabs .f18-l32 {
     font-size: 12px;

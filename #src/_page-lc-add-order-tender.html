@@ -1,0 +1,127 @@
+<form class="add-order-tender" action="#">
+	<div class="tender">
+		<div class="tender-block c-n">
+			<h2 class="t-sb f22-l25 purple3">Company Name</h2>
+			<p class="t-r f16-l24 purple2">You can выбрать компанию из списка компаний, воспользовавшись предложенными
+				или добавить свою.
+			</p>
+			<div class="select">
+				<select id="theme24" class="js-example-basic-single w400">
+					<option value="0" selected>Choose</option>
+				</select>
+			</div>
+			<div class="tender-block-link">
+				<p class="t-r f14-l16 purple2">
+					You can add company если компании нет в списке.
+					<a class="" href="#">
+						<i class="icon icon-green-circle-plus"></i>
+					</a>
+				</p>
+			</div>
+		</div>
+		<div class="tender-block n-c">
+			<label class="t-r f16-l24 purple1" for="site-company4">Сайт компании</label>
+			<input class="i-f w400" type="text" id="site-company4" placeholder="Placeholder">
+		</div>
+		<div class="tender-block o">
+			<h3 class="t-r f16-l24 purple1">Какой ордер вы хотите добавить?</h3>
+			<div class="wrapper-radio3">
+				<div class="form_radio">
+					<label class="t-r f14-l16 purple1">
+						<input type="radio" name="variant4" checked>
+						<span></span>
+						BID
+					</label>
+				</div>
+				<div class="form_radio">
+					<label class="t-r f14-l16 purple1">
+						<input type="radio" name="variant4">
+						<span></span>
+						ASK
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="tender-block d-s">
+			<h2 class="t-sb f22-l25 purple3">Deal Structure</h2>
+			<p class="t-r f16-l24 purple2">You can choose deal structure: direct , spv , forward contract or primary
+				round, выбрав из списка.
+			</p>
+			<select id="theme34" class="js-example-basic-single w400">
+				<option value="0" selected>Choose</option>
+			</select>
+		</div>
+		<div class="tender-block s">
+			<h2 class="t-sb f22-l25 purple3">Описание</h2>
+			<p class="t-r f16-l24 purple2">You can choose deal structure: direct, spv, forward contract or primary
+				round.</p>
+			<textarea class="i-f f14-l16 w400 h235" placeholder="Placeholder text"></textarea>
+		</div>
+		<div class="tender-block i" id="tabs2-tender">
+			<h2 class="t-sb f22-l25 purple3">Информация</h2>
+			<ul class="nav-tabs">
+				<li class="t-m f18-l32 purple1 tab-n2 active">
+					Price
+				</li>
+				<li class="t-m f18-l32 purple1 tab-n2 ">
+					Valuation
+				</li>
+			</ul>
+			<div class="content-t2 active">
+				<div class="ask-block-info">
+					<label class="t-r f16-l24 purple1" for="share_type4">
+						Share Type
+					</label>
+					<select id="share_type4" class="js-example-basic-single w400">
+						<option value="0" selected>Choose</option>
+					</select>
+				</div>
+				<div class="ask-block-info">
+					<div class="wrapper-radio">
+						<div class="form_radio">
+							<label class="t-r f14-l16 purple1">
+								<input type="radio" name="variant" checked>
+								<span></span>
+								$
+							</label>
+						</div>
+						<div class="form_radio">
+							<label class="t-r f14-l16 purple1">
+								<input type="radio" name="variant">
+								<span></span>
+								€
+							</label>
+						</div>
+					</div>
+					<label class="t-r f16-l24 purple1" for="share_price4">Start Share Price</label>
+					<input class="i-f w400" type="text" id="share_price4" placeholder="Placeholder price">
+				</div>
+				<div class="ask-block-info">
+					<label class="t-r f16-l24 purple1" for="share_number4">Number of Share</label>
+					<input class="i-f w400" type="text" id="share_number4" placeholder="Placeholder number">
+				</div>
+			</div>
+			<div class="content-t2">
+				<div class="ask-block-info">
+					<label class="t-r f16-l24 purple1" for="share_type24">Share Type</label>
+					<select id="share_type24" class="js-example-basic-single w400">
+						<option value="0" selected>Choose</option>
+					</select>
+				</div>
+				<div class="ask-block-info">
+					<label class="t-r f16-l24 purple1" for="volume24">Block Volume</label>
+					<input class="i-f w400" type="text" id="volume24" placeholder="Высчитывается автоматически">
+				</div>
+				<div class="ask-block-info">
+					<label class="t-r f16-l24 purple1" for="share_number24">Valuation Start</label>
+					<input class="i-f w400" type="text" id="share_number24" placeholder="Placeholder number">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="add-order-btn">
+		<button class="btn w265">
+			Submit
+		</button>
+	</div>
+</form>

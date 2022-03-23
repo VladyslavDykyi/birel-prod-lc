@@ -17,6 +17,10 @@
 .f14-l16 {
 	font-size: 14px;
 	line-height: 16px;
+	&::placeholder {
+		font-size: 14px;
+		line-height: 16px;
+	}
 }
 .f16-l24 {
 	font-size: 16px;

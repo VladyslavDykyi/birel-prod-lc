@@ -81,6 +81,10 @@
 	
 	& .i {
 		grid-area: info;
+		
+		& .nav-tabs {
+			width: 170px;
+		}
 	}
 	
 	&-block {
@@ -100,7 +104,7 @@
 			grid-area: link;
 			padding: 5px;
 			width: 255px;
-			height: 46px;
+			height: 42px;
 			background: #F6F4FF;
 			border-radius: 6px;
 			@media screen and (max-width: 1470px) {
@@ -120,11 +124,9 @@
 				& i:before {
 					width: 31px;
 					height: 31px;
-					
 				}
 			}
 		}
-		
 		&-info {
 			display: flex;
 			flex-direction: column;
@@ -133,6 +135,9 @@
 			margin-bottom: 20px;
 			@media screen and (max-width: 580px) {
 				max-width: 100%;
+			}
+			&:last-child {
+				margin-bottom: 0;
 			}
 			& .wrapper-radio {
 				display: flex;
