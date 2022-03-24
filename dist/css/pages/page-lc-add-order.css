@@ -417,7 +417,7 @@
 
 .tender {
   display: grid;
-  grid-template-areas: "name specification" "company specification" "order specification" "structure specification" "info fix";
+  grid-template-areas: "name specification" "company specification" "order specification" "structure data" "info fix";
   grid-template-columns: 0.5fr 0.5fr;
   grid-gap: 0 20px;
   margin-top: 50px;
@@ -480,6 +480,29 @@
 
 .tender .i .nav-tabs {
   width: 170px;
+}
+
+.tender .d-r {
+  grid-area: data;
+}
+
+.tender .d-r .date-wrapper {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tender .d-r .date-wrapper input {
+  color: #573CDA;
 }
 
 .tender-block {
@@ -554,6 +577,46 @@
   right: -290px;
   bottom: 0;
   width: 260px;
+}
+
+.daterangepicker {
+  border-color: #573CDA;
+}
+
+.daterangepicker:before {
+  border-bottom-color: #573CDA;
+}
+
+.daterangepicker.show-calendar .drp-buttons {
+  border-top-color: #573CDA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.daterangepicker.show-calendar .drp-buttons button {
+  width: 100px;
+  height: 30px;
+  margin: 0;
+}
+
+.daterangepicker td.active,
+.daterangepicker td.active:hover {
+  background-color: #573CDA;
+  border-color: transparent;
+  color: #fff;
+}
+
+#tabs .nav-tabs .f18-l32,
+#tabs2 .nav-tabs .f18-l32 {
+  font-size: 16px;
+  line-height: 32px;
 }
 
 @media screen and (max-width: 1540px) {
@@ -691,6 +754,15 @@
   .add-order {
     padding: 35px 20px;
   }
+
+  .tender {
+    grid-gap: 0 5px;
+  }
+
+  .tender .d-r .date-wrapper input.w170 {
+    width: 150px;
+    padding: 3px;
+  }
 }
 
 @media screen and (max-width: 680px) {
@@ -704,6 +776,17 @@
 
   .tender .w400 {
     width: 235px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .tender .d-r .date-wrapper input {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .tender .d-r .date-wrapper input.w170 {
+    width: 130px;
   }
 }
 
@@ -801,7 +884,7 @@
   }
 
   .tender {
-    grid-template-areas: "name" "company" "order" "structure" "specification" "info";
+    grid-template-areas: "name" "company" "order" "structure" "specification" "data" "info";
     grid-template-columns: 1fr;
     margin-top: 30px;
   }
@@ -814,6 +897,10 @@
     grid-template-areas: "title" "text" "select" "link";
     grid-template-columns: 100%;
     max-width: 580px;
+  }
+
+  .tender .d-r .date-wrapper input.w170 {
+    width: 140px;
   }
 
   .tender-block {

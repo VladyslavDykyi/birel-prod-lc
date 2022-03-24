@@ -4,11 +4,14 @@
 		"name specification"
 		"company specification"
 		"order specification"
-		"structure specification"
+		"structure data"
 		"info fix";
 	grid-template-columns: 0.5fr 0.5fr;
 	grid-gap: 0 20px;
 	margin-top: 50px;
+	@media screen and (max-width: 768px) {
+		grid-gap: 0 5px;
+	}
 	@media screen and (max-width: 580px) {
 		grid-template-areas:
 			"name"
@@ -16,6 +19,7 @@
 			"order"
 			"structure"
 			"specification"
+			"data"
 			"info";
 		grid-template-columns: 1fr;
 		margin-top: 30px;
@@ -113,7 +117,36 @@
 			width: 170px;
 		}
 	}
-	
+	& .d-r {
+		grid-area: data;
+		& .date-wrapper {
+			margin-top: 20px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			& input {
+				color: $purple;
+				@media screen and (max-width: 650px) {
+					font-size: 12px;
+					line-height: 16px;
+				}
+				&.w170 {
+					@media screen and (max-width: 768px) {
+						width: 150px;
+						padding: 3px;
+					}
+					@media screen and (max-width: 650px) {
+						width: 130px;
+					}
+					@media screen and (max-width: 580px) {
+						width: 140px;
+						
+					}
+				}
+			}
+		}
+	}
 	&-block {
 		max-width: 400px;
 		margin-bottom: 40px;
@@ -190,4 +223,29 @@
 		width: 260px;
 	}
 }
-
+.daterangepicker {
+	border-color: $purple;
+	&:before {
+		border-bottom-color: $purple;
+	}
+	&.show-calendar .drp-buttons {
+		border-top-color: $purple;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		& button {
+			width: 100px;
+			height: 30px;
+			margin: 0;
+		}
+	}
+}
+.daterangepicker td.active, .daterangepicker td.active:hover {
+	background-color: $purple;
+	border-color: transparent;
+	color: #fff;
+}
+#tabs .nav-tabs .f18-l32, #tabs2 .nav-tabs .f18-l32 {
+	font-size: 16px;
+	line-height: 32px;
+}

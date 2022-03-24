@@ -32,3 +32,16 @@ bindTabs2('#tabs2');
 bindTabs2('#tabs2-bid');
 bindTabs2('#tabs2-looking');
 bindTabs2('#tabs2-tender');
+
+$(function() {
+	$('input[name="datetimes"]').daterangepicker({
+		singleDatePicker: true,
+		timePicker: true,
+		startDate: moment().startOf('hour'),
+		endDate: moment().startOf('hour').add(32, 'hour'),
+		locale: {
+			format: 'DD/MM/YYYY hh:mm A'
+		},
+		"buttonClasses": "btn "
+	});
+});
