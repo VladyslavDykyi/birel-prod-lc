@@ -29,11 +29,14 @@ function createPopUp(btn, popup, bg = ".bg-purple") {
 		popup = document.querySelector(popup);
 		bg = document.querySelector(bg);
 	}
+
+
 	const removeBtn = popup.firstElementChild.firstElementChild;
 
 	const togglePopUp = () => {
 		popup.classList.toggle('active');
 		bg.classList.toggle('active');
+
 	}
 
 	const removePopUp = () => {

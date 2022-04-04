@@ -784,6 +784,7 @@ label {
   height: 30px;
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: contain;
 }
 
 .icon-case-plus-green:before {
