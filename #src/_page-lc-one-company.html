@@ -12,7 +12,11 @@
 		<img class="card-img" src="./img/test.png" alt="" width="350px" height="210px">
 		<label class="card-wrapper">
 			<select class="card-wrapper-select js-example-basic-single2">
-				<option value="0" selected>Choose offer</option>
+				<option value="0" disabled selected>Choose offer</option>
+				<option value="1" >Bid</option>
+				<option value="2" >Ask</option>
+				<option value="3" >Looking for an offer</option>
+				<option value="4" >Tender</option>
 			</select>
 			<button class="card-wrapper-btn btn btn-green">Add +</button>
 		</label>
@@ -103,10 +107,10 @@
 <div class="one-company-tab" id="tabs">
 	<ul class="tab-wrapper nav-tabs">
 		<li class="t-r f22-l25 purple1 tab-n active">
-			Информация
+			Orders
 		</li>
 		<li class="t-r f22-l25 purple1 tab-n">
-			Финансирование
+			Financing
 		</li>
 	</ul>
 	<div class="content-t active">
@@ -196,7 +200,7 @@
 				</tr>
 				</thead>
 				<tbody class="table-body">
-				<tr class="body-row ask">
+				<tr class="body-row bid">
 					<td class="body-row-item">
 						<div>
 							1
@@ -435,7 +439,7 @@
 					</tr>
 					</thead>
 					<tbody class="table-body">
-					<tr class="body-row ask">
+					<tr class="body-row bid">
 						<td class="body-row-item">
 							<div>
 								1

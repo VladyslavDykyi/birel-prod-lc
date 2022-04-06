@@ -235,7 +235,7 @@
   background-color: #C6F7CE;
 }
 
-.table-body .body-row.ask div {
+.table-body .body-row.bid div {
   background-color: #F8D2D2;
 }
 
@@ -609,7 +609,7 @@
   background: #DDFAE2;
 }
 
-.one-company-tab .content-t .history .body-row.ask .body-row-item div {
+.one-company-tab .content-t .history .body-row.bid .body-row-item div {
   background: rgba(248, 210, 210, 0.6);
 }
 

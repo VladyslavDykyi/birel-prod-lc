@@ -7,9 +7,12 @@
 	@media screen and (max-width: 1024px) {
 		width: 100%;
 	}
-	
+	height: calc(100vh - 102px);
+	@media screen and (max-height: 898px) {
+		height: auto;
+	}
 	&-company {
-		flex-grow: 1;
+		//flex-grow: 1;
 		padding: 40px 65px;
 		width: 550px;
 		background-color: $white;

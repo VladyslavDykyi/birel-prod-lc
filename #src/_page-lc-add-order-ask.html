@@ -12,7 +12,7 @@
 			</div>
 			<div class="ask-block-link">
 				<p class="t-r f14-l16 purple2">
-					You can add company если компании нет в списке .
+					You can add company if the company is not listed.
 					<a class="" href="#">
 						<i class="icon icon-green-circle-plus"></i>
 					</a>
@@ -29,13 +29,13 @@
 			</select>
 		</div>
 		<div class="ask-block s">
-			<h2 class="t-sb f22-l25 purple3">Описание</h2>
+			<h2 class="t-sb f22-l25 purple3">Description</h2>
 			<p class="t-r f16-l24 purple2">You can choose deal structure: direct, spv, forward contract or primary
 				round.</p>
 			<textarea class="i-f f14-l16 w400 h235" cols="30" rows="10" placeholder="Placeholder text"></textarea>
 		</div>
 		<div class="ask-block i" id="tabs2">
-			<h2 class="t-sb f22-l25 purple3">Информация</h2>
+			<h2 class="t-sb f22-l25 purple3">Information</h2>
 			<ul class="nav-tabs ">
 				<li class="t-m f18-l32 purple1 tab-n2 active">
 					Price
@@ -50,7 +50,10 @@
 						Share Type
 					</label>
 					<select id="share_type" class="js-example-basic-single w400">
-						<option value="0" selected>Choose</option>
+						<option value="0" disabled selected>Choose</option>
+						<option value="1" >Preferred</option>
+						<option value="2" >Common</option>
+						<option value="3" >Mix</option>
 					</select>
 				</div>
 				<div class="ask-block-info">
@@ -79,7 +82,7 @@
 				</div>
 				<div class="ask-block-info">
 					<label class="t-r f16-l24 purple1" for="volume">Volume</label>
-					<input class="i-f w400" type="text" id="volume" placeholder="Высчитывается автоматически">
+					<input class="i-f w400" type="text" id="volume" placeholder="Placeholder">
 				</div>
 			</div>
 			<div class="content-t2">
