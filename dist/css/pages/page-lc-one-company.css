@@ -242,7 +242,7 @@
 }
 
 .table-body .body-row-item > div {
-  height: 32px;
+  height: 34px;
   text-align: left;
   vertical-align: middle;
   padding: 4px 12px;
@@ -252,6 +252,17 @@
   line-height: 24px;
   color: #2A206A;
   background-color: #C6F7CE;
+}
+
+.table-body .body-row-item > div > a {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+}
+
+.table-body .body-row-item > div > a > i:before {
+  width: 30px;
+  height: 26px;
 }
 
 .table-body .body-row.bid div {

@@ -73,7 +73,7 @@
 			}
 			
 			& > div {
-				height: 32px;
+				height: 34px;
 				text-align: left;
 				vertical-align: middle;
 				padding: 4px 12px;
@@ -83,8 +83,15 @@
 				line-height: 24px;
 				color: $purple3;
 				background-color: #C6F7CE;
-				
-				
+				& > a {
+					display: inline-block;
+					width: 26px;
+					height: 26px;
+					& > i:before {
+						width: 30px;
+						height: 26px;
+					}
+				}
 			}
 		}
 		
