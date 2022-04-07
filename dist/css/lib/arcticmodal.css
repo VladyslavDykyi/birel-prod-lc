@@ -34,7 +34,8 @@
 
 .arcticmodal-error {
   padding: 20px;
-  border-radius: 10px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
   background: #000;
   color: #fff;
 }
@@ -42,6 +43,7 @@
 .arcticmodal-loading {
   width: 80px;
   height: 80px;
-  border-radius: 10px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
   background: #000 url(loading.gif) no-repeat 50% 50%;
 }

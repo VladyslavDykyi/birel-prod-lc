@@ -181,7 +181,7 @@ function csslib() {
 		)
 		.pipe(
 			autoprefixer({
-				overrideBrowserslist: ["last 5 versions"],
+				overrideBrowserslist: ["last 30 versions"],
 				cascade: true
 			})
 		)
@@ -206,7 +206,7 @@ function cssdef() {
 		)
 		.pipe(
 			autoprefixer({
-				overrideBrowserslist: ["last 5 versions"],
+				overrideBrowserslist: ["last 30 versions"],
 				cascade: true
 			})
 		)
@@ -231,7 +231,7 @@ function csspage() {
 		)
 		.pipe(
 			autoprefixer({
-				overrideBrowserslist: ["last 5 versions"],
+				overrideBrowserslist: ["last 30 versions"],
 				cascade: true
 			})
 		)
