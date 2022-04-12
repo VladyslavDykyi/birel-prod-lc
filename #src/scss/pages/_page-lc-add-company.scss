@@ -20,20 +20,6 @@
 			width: 100%;
 		}
 		
-		&-link {
-			display: none;
-			
-			&.active {
-				display: block;
-			}
-			
-			& a {
-				display: inline-flex;
-				align-items: center;
-				grid-gap: 10px;
-			}
-		}
-		
 		&-wrapper {
 			margin-top: 60px;
 			

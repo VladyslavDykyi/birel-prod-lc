@@ -19,7 +19,7 @@ $green-hover: #23C89A;
 $black: #000;
 $black2: #2A206A;
 $black3: #515994;
-
+$black4: #2E2E2E;
 
 $gradient: linear-gradient(208.1deg, #F6F4FF 7.35%, #E5DDFA 79.61%);
 $gradient-two: linear-gradient(93.19deg, #573CDA 10.16%, #3D2B93 97.41%);
@@ -41,10 +41,6 @@ $WS-sb: "WorkSans-SemiBold";
 	box-sizing: border-box;
 }
 
-*:after,
-*:before {
-	transition: all 0.2s linear;
-}
 
 textarea,
 input,
@@ -117,7 +113,17 @@ label {
 		padding: 60px 0 60px;
 	}
 }
-
+.back-link {
+	display: none;
+	&.active {
+		display: block;
+	}
+	& a {
+		display: inline-flex;
+		align-items: center;
+		grid-gap: 10px;
+	}
+}
 .box-container {
 	background-color: $white2;
 	padding-left: 350px;
