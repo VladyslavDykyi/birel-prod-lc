@@ -1,9 +1,9 @@
 .company {
 	background-color: $white;
 	width: 100%;
-	padding: 40px 65px;
+	padding: 40px 65px 60px;
 	@media screen and (max-width: 1540px) {
-		padding: 35px 25px;
+		padding: 35px 25px 50px;
 	}
 	@media screen and (max-width: 1024px) {
 		padding: 45px 40px;
@@ -134,55 +134,58 @@
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		grid-gap: 40px;
+		grid-gap: 20px 1.875%;
+		@media screen and (max-width: 1920px) {
+			grid-gap: 20px 3.333%;
+		}
 		@media screen and (max-width: 1540px) {
-			grid-gap: 25px;
+			grid-gap: 20px 3.333%;
+		}
+		@media screen and (max-width: 1024px) {
+			grid-gap: 20px 2%;
 		}
 		@media screen and (max-width: 768px) {
-			grid-gap: 10px;
+			grid-gap: 20px 4%;
 			justify-content: space-between;
 		}
+		@media screen and (max-width: 540px) {
+			grid-gap: 20px;
+		}
 	}
-	
 	&-item {
 		background-color: $white;
 		border: 1px solid $purple4;
-		width: 21.526%;
-		padding: 50px;
+		width: 18.5%;
+		padding: 40px 20px 35px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 		position: relative;
+		@media screen and (max-width: 1920px) {
+			width: 22.5%;
+		}
 		@media screen and (max-width: 1680px) {
 			padding: 20px;
 		}
 		@media screen and (max-width: 1540px) {
 			width: 30%;
-			
-		}
-		@media screen and (max-width: 1400px) {
-		}
-		@media screen and (max-width: 1280px) {
-			padding: 20px;
 		}
 		@media screen and (max-width: 1180px) {
 			width: 48%;
-			padding: 40px;
 		}
 		@media screen and (max-width: 1024px) {
-			width: 48.18%;
-			padding: 20px;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
+			width: 32%;
+			
+			padding: 10px;
+		}
+		@media screen and (max-width: 768px) {
+			width: 48%;
 		}
 		@media screen and (max-width: 540px) {
 			width: 100%;
-			padding: 40px 40px 20px 40px;
 		}
 		
 		&-link {
-			@media screen and (max-width: 1024px) {
-				display: flex;
-				justify-content: center;
-			}
 		}
 		
 		&-img {
@@ -193,30 +196,22 @@
 		
 		&-company {
 			display: block;
-			margin-top: 20px;
-			@media screen and (max-width: 1024px) {
-				text-align: center;
-			}
+			margin: 20px 0 8px;
+			height: 64px;
 		}
-		
 		&-tech {
-			margin: 6px 0 20px;
-			@media screen and (max-width: 1024px) {
-				text-align: center;
+			display: flex;
+			align-items: center;
+			& span {
+				flex: 0 1 50%;
 			}
 		}
 		
 		&-val {
-			margin-bottom: 6px;
-			@media screen and (max-width: 1024px) {
-				text-align: center;
-			}
+			margin: 15px 0 6px;
 		}
 		
 		&-numb {
-			@media screen and (max-width: 1024px) {
-				text-align: center;
-			}
 		}
 		
 		&-form {
@@ -281,10 +276,46 @@
 	&-text-bot {
 		margin-top: 30px;
 		padding: 30px;
-		background: #F6F4FF;
+		background: $white2;
+		position: relative;
+		&.open > p {
+			background: none;
+			background-clip: border-box;
+			height: 100%;
+			color: $purple3;
+		}
+		&.open > .btn-open-text {
+			transform: rotate(180deg);
+		}
 		& > p {
 			font-size: 14px;
 			line-height: 18px;
+			text-align: justify;
+			height: 150px;
+			overflow: hidden;
+			position: relative;
+			color: transparent;
+			background: linear-gradient(180deg, #515994 36.73%, rgba(81, 89, 148, 0) 100%);
+			background-clip: text;
+			transition: all 0.2s linear;
+		}
+		& > .btn-open-text {
+			background: $purple4;
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: none;
+			position: absolute;
+			bottom: -30px;
+			left: calc(50% - 30px);
+			opacity: 0.7;
+			&:hover {
+				background: $purple;
+				opacity: 1;
+			}
 		}
 	}
 }

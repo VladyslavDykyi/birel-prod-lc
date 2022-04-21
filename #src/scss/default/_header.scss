@@ -126,7 +126,8 @@
 				&:hover {
 					background-color: $purple3;
 				}
-				& a {
+				& a,
+				button {
 					display: inline-flex;
 					align-items: center;
 					font-family: $WS-r;
