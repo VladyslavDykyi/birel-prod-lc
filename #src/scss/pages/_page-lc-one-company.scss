@@ -21,19 +21,6 @@
 		@media screen and (max-width: 580px) {
 			padding: 25px 15px;
 		}
-		&-link {
-			display: none;
-			margin-bottom: 50px;
-			&.active {
-				display: block;
-			}
-			
-			& a {
-				display: inline-flex;
-				align-items: center;
-				grid-gap: 10px;
-			}
-		}
 		
 		&-wrapper {
 			display: flex;
@@ -100,13 +87,12 @@
 				flex-wrap: wrap;
 				grid-gap: 40px;
 				margin-bottom: 50px;
+				
 				&-box {
 					display: flex;
 					align-items: center;
+					grid-gap: 0 10px;
 					
-					&:first-child {
-						grid-gap: 20px;
-					}
 					&:last-child {
 						flex-wrap: wrap;
 						padding: 5px;

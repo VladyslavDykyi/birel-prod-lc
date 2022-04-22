@@ -76,20 +76,23 @@
 			grid-gap: 5px;
 		}
 		&:hover {
-			.menu-box {
+			& .menu-box {
 				display: block;
 			}
 		}
 		&-avatar {
 			max-height: 42px;
 			max-width: 42px;
-			& .avatar {
+			& span {
 				max-width: 42px;
 				min-width: 42px;
 				min-height: 42px;
 				max-height: 42px;
-				object-fit: cover;
+				background-color: #FFFFFF;
 				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
 			}
 		}
 		&-menu {
