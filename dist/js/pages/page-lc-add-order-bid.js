@@ -1,10 +1,9 @@
 import {bindTabs2, multiplication} from '../default/module-lc.js';
 
-bindTabs2('#tabs_ask');
+bindTabs2('#tabs_bid');
+multiplication('#tabs_bid' ,'#share_price_bid','#share_number_bid','#volume_bid');
 
-multiplication('#tabs_ask' ,'#share_price_ask','#share_number_ask','#volume_ask');
-
-f('#tabs_ask');
+f('#tabs_bid');
 
 function f(item) {
 	let items = document.querySelector(item);
@@ -28,7 +27,7 @@ function clearName(e) {
 			deleteName(elementInput);
 			deleteName(elementSelect);
 		} else {
-			if (e[i] == e[0]) {
+			if (e[i] === e[0]) {
 				addName2();
 			} else {
 				addName();
@@ -44,9 +43,9 @@ function clearName(e) {
 }
 
 function addName( ) {
-	let items1 = document.querySelector('#volume_ask2');
-	let items2 = document.querySelector('#share_number_ask2');
-	let items3 = document.querySelector('#share_type_ask2');
+	let items1 = document.querySelector('#volume_bid2');
+	let items2 = document.querySelector('#share_number_bid2');
+	let items3 = document.querySelector('#share_type_bid2');
 
 	items1.setAttribute('name', 'volume');
 	items2.setAttribute('name', 'valuation');
@@ -58,12 +57,12 @@ function addName( ) {
 }
 
 function addName2() {
-	let items1 = document.querySelector('#volume_ask');
-	let items2 = document.querySelector('#share_number_ask');
-	let items3 = document.querySelector('#share_price_ask');
-	let items4 = document.querySelector('#share_type_currency_ask1');
-	let items5 = document.querySelector('#share_type_currency_ask2');
-	let items6 = document.querySelector('#share_type_ask');
+	let items1 = document.querySelector('#volume_bid');
+	let items2 = document.querySelector('#share_number_bid');
+	let items3 = document.querySelector('#share_price_bid');
+	let items4 = document.querySelector('#share_type_currency_bid1');
+	let items5 = document.querySelector('#share_type_currency_bid2');
+	let items6 = document.querySelector('#share_type_bid');
 
 	items1.setAttribute('name', 'volume');
 	items2.setAttribute('name', 'share_number');

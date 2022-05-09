@@ -1,47 +1,81 @@
-import {bindTabs,} from '../default/module-lc.js';
+import {bindTabs2, multiplication} from '../default/module-lc.js';
 
+bindTabs2('#tabs_ask');
 
-bindTabs('#tabs');
+multiplication('#tabs_ask' ,'#share_price_ask','#share_number_ask','#volume_ask');
 
-function bindTabs2(container) {
-	if (typeof container === 'string') {
-		container = document.querySelector(container);
-	}
+f('#tabs_ask');
 
-	const titles = container.querySelectorAll('.tab-n2');
-	const contents = container.querySelectorAll('.content-t2');
-
-	for (let i = 0; i < titles.length; i++) {
-		const titleEl = titles[i];
-		titleEl.addEventListener('click', () => {
-			deactivate(titles);
-			deactivate(contents);
-			titles[i].classList.add('active');
-			contents[i].classList.add('active');
+function f(item) {
+	let items = document.querySelector(item);
+	let itemsUl = items.querySelectorAll('.tab-n2');
+	let itemsTabs = items.querySelectorAll('.content-t2');
+	for (let i = 0; i < itemsUl.length; i++) {
+		const titleEl = itemsUl[i];
+		titleEl.addEventListener('click', e => {
+			clearName(itemsTabs);
 		});
 	}
+}
 
-	function deactivate(elements) {
-		for (let i = 0; i < elements.length; i++) {
-			const element = elements[i];
-			element.classList.remove('active');
+
+function clearName(e) {
+	for (let i = 0; i < e.length; i++) {
+		let item = e[i];
+		if (!item.classList.contains('active')) {
+			let elementInput = item.querySelectorAll('input');
+			let elementSelect = item.querySelectorAll('select');
+			deleteName(elementInput);
+			deleteName(elementSelect);
+		} else {
+			if (e[i] == e[0]) {
+				addName2();
+			} else {
+				addName();
+			}
+		}
+	}
+	function deleteName(e) {
+		for (let i = 0; i < e.length; i++) {
+			e[i].removeAttribute("name");
+			e[i].removeAttribute("required");
 		}
 	}
 }
-bindTabs2('#tabs2');
-bindTabs2('#tabs2-bid');
-bindTabs2('#tabs2-looking');
-bindTabs2('#tabs2-tender');
 
-$(function() {
-	$('input[name="datetimes"]').daterangepicker({
-		singleDatePicker: true,
-		timePicker: true,
-		startDate: moment().startOf('hour'),
-		endDate: moment().startOf('hour').add(32, 'hour'),
-		locale: {
-			format: 'DD/MM/YYYY hh:mm A'
-		},
-		"buttonClasses": "btn "
-	});
-});
+function addName( ) {
+	let items1 = document.querySelector('#volume_ask2');
+	let items2 = document.querySelector('#share_number_ask2');
+	let items3 = document.querySelector('#share_type_ask2');
+
+	items1.setAttribute('name', 'volume');
+	items2.setAttribute('name', 'valuation');
+	items3.setAttribute('name', 'share_type');
+
+	items1.required = true;
+	items2.required = true;
+	items3.required = true;
+}
+
+function addName2() {
+	let items1 = document.querySelector('#volume_ask');
+	let items2 = document.querySelector('#share_number_ask');
+	let items3 = document.querySelector('#share_price_ask');
+	let items4 = document.querySelector('#share_type_currency_ask1');
+	let items5 = document.querySelector('#share_type_currency_ask2');
+	let items6 = document.querySelector('#share_type_ask');
+
+	items1.setAttribute('name', 'volume');
+	items2.setAttribute('name', 'share_number');
+	items3.setAttribute('name', 'share_price');
+	items4.setAttribute('name', 'share_type_currency');
+	items5.setAttribute('name', 'share_type_currency');
+	items6.setAttribute('name', 'share_type');
+
+	items1.required = true;
+	items2.required = true;
+	items3.required = true;
+	items4.required = true;
+	items5.required = true;
+	items6.required = true;
+}
