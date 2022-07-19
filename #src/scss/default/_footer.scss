@@ -6,7 +6,7 @@
 	bottom: 0;
 	left: 0;
 	width: 100vw;
-	z-index: 20;
+	z-index: 200;
 	@media screen and (max-width: 1024px) {
 		display: block;
 		box-shadow: $box-shadow5;
@@ -17,8 +17,100 @@
 			justify-content: space-evenly;
 		}
 	}
+	
 }
-
+.notice-popup-f {
+	display: none;
+	position: absolute;
+	width: 80%;
+	height: calc(100vh - 165px);
+	background: $white2;
+	box-shadow: 3px 3px 8px rgba(23, 17, 50, 0.25);
+	padding: 15px 20px 15px 15px;
+	top: 102px;
+	right: 0;
+	z-index: 200;
+	
+	&.active {
+		@media screen and (max-width: 1024px) {
+			display: block;
+		}
+	}
+	@media screen and (max-width: 768px) {
+		top: 60px;
+		height: calc(100vh - 123px);
+	}
+	@media screen and (max-width: 580px) {
+		padding: 15px 8px 15px 15px;
+		width: 85%;
+	}
+	&  .notice_list {
+		max-height: calc(100vh - 192px);
+		overflow: hidden;
+		overflow-y: auto;
+		@media screen and (max-width: 768px) {
+			max-height: calc(100vh - 150px);
+		}
+		&::-webkit-scrollbar {
+			background: $white;
+			border-radius: 8px;
+			width: 7px;
+			height: 8px;
+			
+		}
+		
+		&::-webkit-scrollbar-thumb {
+			background: $grey2;
+			border-radius: 6px;
+			height: 8px;
+		}
+	}
+	
+	&  .notice_item {
+		display: flex;
+		padding: 6px 8px 2px 3px;
+		margin-right: 8px;
+		margin-bottom: 7px;
+		
+		&:last-child {
+			margin-bottom: 0;
+		}
+		& > div {
+			margin-right: 20px;
+			@media screen and (max-width: 580px) {
+				margin-right: 5px;
+			}
+		}
+		&.new {
+			background-color: rgba(171, 157, 236, 0.2);
+		}
+		
+		&-link {
+			display: inline;
+			flex: 0 1 455px;
+			font-size: 18px;
+			line-height: 25px;
+			@media screen and (max-width: 580px) {
+				font-size: 14px;
+				line-height: 18px;
+			}
+		}
+		
+		&-hour {
+			margin-left: auto;
+			flex: 0 0 80px;
+			text-align: right;
+			font-size: 16px;
+			line-height: 25px;
+			@media screen and (max-width: 580px) {
+				margin-left: 5px;
+				flex: 0 0 56px;
+				font-size: 12px;
+				line-height: 18px;
+			}
+		}
+	}
+}
 .bg-purple {
 	&:before {
 		content: '';

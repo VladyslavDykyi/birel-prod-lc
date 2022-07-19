@@ -4,8 +4,8 @@
           box-shadow: 3px 0px 6px rgba(10, 12, 80, 0.15);
   width: 350px;
   min-width: 350px;
-  height: -webkit-calc(100vh - 102px);
-  height: calc(100vh - 102px);
+  height: -webkit-calc(100vh - 72px);
+  height: calc(100vh - 72px);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -247,9 +247,11 @@
       -ms-flex-align: center;
           align-items: center;
   grid-gap: 12px;
-  width: 265px;
+  width: 300px;
   padding: 8px;
   background-color: #F6F4FF;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
 }
 
 .company-search-link i:before {
@@ -293,7 +295,7 @@
 
 .company-philter-btn {
   background-color: #F6F4FF;
-  padding: 8px;
+  padding: 5px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -304,17 +306,25 @@
           align-items: center;
   grid-gap: 8px;
   border: none;
-  font-family: "WorkSans-Regular";
+  font-family: "WorkSans-Regular", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   color: #573CDA;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
 }
 
 .company-philter-btn:hover i:before {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.company-philter-btn-s {
+  height: 40px;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
 }
 
 .company-list {
@@ -353,6 +363,21 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+}
+
+.company-item-count {
+  background: #1BC082;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 2px 4px;
+  position: absolute;
+  top: 15px;
+  right: 0;
+  -webkit-border-radius: 3px 0 0 3px;
+          border-radius: 3px 0 0 3px;
 }
 
 .company-item-img {
@@ -470,6 +495,8 @@
   padding: 30px;
   background: #F6F4FF;
   position: relative;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
 }
 
 .company-text-bot.open > p {
@@ -497,7 +524,6 @@
   background: -o-linear-gradient(top, #515994 36.73%, rgba(81, 89, 148, 0) 100%);
   background: linear-gradient(180deg, #515994 36.73%, rgba(81, 89, 148, 0) 100%);
   -webkit-background-clip: text;
-          background-clip: text;
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
@@ -557,6 +583,31 @@
   }
 }
 
+@media screen and (max-width: 1580px) {
+  .sidebar {
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 270px;
+    min-width: 270px;
+  }
+
+  .sidebar-nav {
+    padding: 20px 20px 50px 20px;
+  }
+
+  .sidebar-btn {
+    padding: 15px 20px;
+  }
+
+  .sidebar-btn.grey {
+    padding: 15px 20px;
+  }
+
+  .sidebar-list {
+    padding: 15px 20px;
+  }
+}
+
 @media screen and (max-width: 1540px) {
   .company {
     padding: 35px 25px 50px;
@@ -564,10 +615,6 @@
 
   .company-list {
     grid-gap: 20px 3.333%;
-  }
-
-  .company-item {
-    width: 30%;
   }
 }
 
@@ -580,8 +627,8 @@
 @media screen and (max-width: 1024px) {
   .sidebar {
     display: none;
-    height: -webkit-calc(100vh - 120px);
-    height: calc(100vh - 120px);
+    height: -webkit-calc(100vh - 135px);
+    height: calc(100vh - 135px);
     width: 100vw;
     min-width: 100vw;
     overflow-x: hidden;
@@ -664,6 +711,11 @@
 }
 
 @media screen and (max-width: 768px) {
+  .sidebar {
+    height: -webkit-calc(100vh - 120px);
+    height: calc(100vh - 120px);
+  }
+
   .company {
     padding: 35px 20px;
   }

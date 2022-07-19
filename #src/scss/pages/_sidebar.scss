@@ -3,20 +3,29 @@
 	box-shadow: $box-shadow4;
 	width: 350px;
 	min-width: 350px;
-	height: calc(100vh - 102px);
+	height: calc(100vh - 72px);
 	display: flex;
 	flex-direction: column;
 	position: fixed;
 	left: 0;
 	z-index: 20;
+	@media screen and (max-width: 1580px) {
+		overflow-x: hidden;
+		overflow-y: auto;
+		width: 270px;
+		min-width: 270px;
+	}
 	@media screen and (max-width: 1024px) {
 		display: none;
-		height: calc(100vh - 120px);
+		height: calc(100vh - 135px);
 		width: 100vw;
 		min-width: 100vw;
 		overflow-x: hidden;
 		overflow-y: auto;
 		background-color: $purple3;
+	}
+	@media screen and (max-width: 768px) {
+		height: calc(100vh - 120px);
 	}
 	
 	&.active {
@@ -26,11 +35,14 @@
 	&-nav {
 		padding: 50px 20px 0 65px;
 		flex-grow: 1;
+		
+		@media screen and (max-width: 1580px) {
+			padding: 20px 20px 50px 20px;
+		}
 		@media screen and (max-width: 1024px) {
 			padding: 50px 20px 50px 20px;
 			flex-grow: 0;
 		}
-		
 		&-item {
 			margin-bottom: 35px;
 			
@@ -109,6 +121,9 @@
 	&-btn {
 		padding: 15px 105px 15px 65px;
 		background-color: $purple;
+		@media screen and (max-width: 1580px) {
+			padding: 15px 20px;
+		}
 		@media screen and (max-width: 1024px) {
 			background-color: $purple3;
 			padding: 15px 20px 15px 20px;
@@ -127,6 +142,9 @@
 		&.grey {
 			padding: 15px 85px 15px 65px;
 			background-color: #C0BCD699;
+			@media screen and (max-width: 1580px) {
+				padding: 15px 20px;
+			}
 			@media screen and (max-width: 1024px) {
 				padding: 15px 20px 15px 20px;
 				background-color: $purple3;
@@ -156,6 +174,9 @@
 	&-list {
 		padding: 15px 0 15px 70px;
 		background-color: $purple3;
+		@media screen and (max-width: 1580px) {
+			padding: 15px 20px;
+		}
 		@media screen and (max-width: 1024px) {
 			padding: 15px 20px 15px 20px;
 		}

@@ -69,9 +69,10 @@
 			display: flex;
 			align-items: center;
 			grid-gap: 12px;
-			width: 265px;
+			width: 300px;
 			padding: 8px;
 			background-color: $white2;
+			border-radius: 6px;
 			@media screen and (max-width: 425px) {
 				width: 100%;
 			}
@@ -112,7 +113,7 @@
 		
 		&-btn {
 			background-color: $white2;
-			padding: 8px;
+			padding: 5px;
 			display: flex;
 			align-items: center;
 			grid-gap: 8px;
@@ -122,9 +123,13 @@
 			font-size: 16px;
 			line-height: 21px;
 			color: #573CDA;
-			
+			border-radius: 6px;
 			&:hover i:before {
 				transform: scale(1.1);
+			}
+			&-s {
+				height: 40px;
+				border-radius: 6px;
 			}
 		}
 	}
@@ -161,15 +166,16 @@
 		flex-direction: column;
 		justify-content: space-between;
 		position: relative;
+		border-radius: 6px;
 		@media screen and (max-width: 1920px) {
 			width: 22.5%;
 		}
 		@media screen and (max-width: 1680px) {
 			padding: 20px;
 		}
-		@media screen and (max-width: 1540px) {
-			width: 30%;
-		}
+		//@media screen and (max-width: 1540px) {
+		//	width: 30%;
+		//}
 		@media screen and (max-width: 1180px) {
 			width: 48%;
 		}
@@ -184,7 +190,17 @@
 		@media screen and (max-width: 540px) {
 			width: 100%;
 		}
-		
+		&-count {
+			background: $green;
+			color: $white;
+			font-size: 14px;
+			line-height: 20px;
+			padding: 2px 4px;
+			position: absolute;
+			top: 15px;
+			right: 0;
+			border-radius: 3px 0 0 3px;
+		}
 		&-link {
 		}
 		
@@ -279,6 +295,7 @@
 		padding: 30px;
 		background: $white2;
 		position: relative;
+		border-radius: 6px;
 		&.open > p {
 			background: none;
 			background-clip: border-box;
@@ -297,7 +314,7 @@
 			position: relative;
 			color: transparent;
 			background: linear-gradient(180deg, #515994 36.73%, rgba(81, 89, 148, 0) 100%);
-			background-clip: text;
+			-webkit-background-clip: text;
 			transition: all 0.2s linear;
 		}
 		& > .btn-open-text {

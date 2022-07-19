@@ -23,6 +23,7 @@ function bindTabs(container) {
 		}
 	}
 }
+
 function createPopUp(btn, popup, bg = ".bg-purple") {
 	if (typeof btn === 'string' && typeof popup === 'string') {
 		btn = document.querySelector(btn);
@@ -32,16 +33,17 @@ function createPopUp(btn, popup, bg = ".bg-purple") {
 
 
 	const removeBtn = popup.firstElementChild.firstElementChild;
-
+	const body = document.querySelector('body');
 	const togglePopUp = () => {
 		popup.classList.toggle('active');
 		bg.classList.toggle('active');
-
+		body.classList.toggle('lock');
 	}
 
 	const removePopUp = () => {
 		popup.classList.remove('active');
 		bg.classList.remove('active');
+		body.classList.remove('lock');
 	}
 
 	btn.addEventListener('click', e => {
@@ -63,6 +65,7 @@ function createPopUp(btn, popup, bg = ".bg-purple") {
 		}
 	});
 }
+
 function bindTabs2(container) {
 	if (typeof container === 'string') {
 		container = document.querySelector(container);
@@ -88,21 +91,33 @@ function bindTabs2(container) {
 		}
 	}
 }
-function multiplication(container,prise,number, id2) {
-	if (typeof container === 'string') {
-		container = document.querySelector(container);
-	}
-	const inputElem = container.querySelectorAll('.m-bid');
-	const inputNumber = container.querySelector(number);
-	const inputPrise = container.querySelector(prise);
-	let inpRes = container.querySelector(id2);
-	let res;
-	for (let i = 0; i < inputElem.length; i++) {
-		inputElem[i].addEventListener('input',
-			function () {
-				res = inputPrise.value * inputNumber.value;
-				inpRes.value = res;
-			})
+
+function calculate(btn,share_price,share_number,volume) {
+	btn.addEventListener('click',function() {
+		checkValue();
+	});
+
+	function checkValue() {
+		let shareNumber = Number(share_number.value);
+		let volume1 = Number(volume.value);
+		let sharePrice = Number(share_price.value);
+		const errorCalc = btn.nextElementSibling;
+		if (volume1 !== null && volume1 !== 0 && shareNumber !== null && shareNumber !== 0 && sharePrice !== null && sharePrice !== 0) {
+			errorCalc.innerText = 'No count when 3 fields are filled';
+		} else if(sharePrice !== null && sharePrice !== 0 && shareNumber !== null && shareNumber !== 0) {
+			errorCalc.innerText = '';
+			let result = sharePrice * shareNumber;
+			volume.value = result.toFixed(3);
+		} else if (sharePrice !== null && sharePrice !== 0 && volume1 !== null && volume1 !== 0) {
+			errorCalc.innerText = '';
+			let result = volume1 / sharePrice;
+			share_number.value =  result.toFixed(3);
+		} else if (volume1 !== null && volume1 !== 0 && shareNumber !== null && shareNumber !== 0) {
+			errorCalc.innerText = '';
+			let result = volume1 / shareNumber ;
+			share_price.value = result.toFixed(3);
+		}
 	}
 }
-export  {bindTabs, createPopUp, bindTabs2,multiplication};
+
+export {bindTabs, createPopUp, bindTabs2, calculate};

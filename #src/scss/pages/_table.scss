@@ -1,125 +1,9 @@
 .table {
 	width: 100%;
-	min-width: 1380px;
-}
-
-.table-head {
-	& .head-row {
-		&-item {
-			text-align: left;
-			border-left: 1px solid $white;
-			border-right: 1px solid $white;
-			border-top: 4px solid white;
-			border-bottom: 4px solid white;
-			vertical-align: middle;
-			
-			&:first-child div {
-				border-radius: 6px 0 0 6px;
-				text-align: right;
-			}
-			
-			&:last-child div {
-				border-radius: 0 6px 6px 0;
-			}
-			
-			& div {
-				padding: 8px 12px;
-				height: 40px;
-				font-family: $WS-sb;
-				font-weight: 600;
-				font-size: 16px;
-				line-height: 24px;
-				color: $white;
-				background-color: $purple3;
-			}
-		}
-	}
-}
-
-.table-body {
-	& .body-row {
-		&-item {
-			border-top: 4px solid white;
-			border-bottom: 4px solid white;
-			vertical-align: middle;
-			
-			&:first-child div {
-				border-radius: 6px 0 0 6px;
-				text-align: right;
-			}
-			
-			&:last-child div {
-				border-radius: 0 6px 6px 0;
-			}
-			
-			& .reset-btn {
-				width: 24px;
-				height: 24px;
-				
-				& .tree-dots {
-					display: block;
-				}
-			}
-			
-			&.center div {
-				display: flex;
-				justify-content: center;
-			}
-			
-			&.center div button {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-			}
-			
-			& > div {
-				height: 34px;
-				text-align: left;
-				vertical-align: middle;
-				padding: 4px 12px;
-				font-family: $WS-r;
-				font-weight: 400;
-				font-size: 16px;
-				line-height: 24px;
-				color: $purple3;
-				background-color: #C6F7CE;
-				& > a {
-					display: inline-block;
-					width: 26px;
-					height: 26px;
-					& > i:before {
-						width: 30px;
-						height: 26px;
-					}
-				}
-			}
-		}
-		
-		&.bid {
-			& div {
-				background-color: #F8D2D2;
-			}
-		}
-		
-		&.new {
-			& div {
-				background-color: #C0BCD699;
-			}
-		}
-		
-		&.history {
-			& div {
-				background-color: #C6F6CE99;
-			}
-		}
-	}
-}
-
-.table-two {
-	width: 100%;
-	min-width: 1380px;
+	//min-width: 1380px;
 	
-	.table-head {
+	
+	& .table-head {
 		& .head-row {
 			&-item {
 				text-align: left;
@@ -131,14 +15,53 @@
 				
 				&:first-child div {
 					border-radius: 6px 0 0 6px;
-					text-align: right;
 				}
 				
 				&:last-child div {
 					border-radius: 0 6px 6px 0;
 				}
 				
-				& div {
+				&:first-child > div > div {
+					text-align: right;
+				}
+				
+				& .date {
+					width: 110px;
+				}
+				
+				& .company {
+					width: 190px;
+				}
+				
+				& .valuation {
+					width: 135px;
+				}
+				
+				& .volume {
+					width: 130px;
+				}
+				
+				& .share-price {
+					width: 135px;
+				}
+				
+				& .number-of-shares {
+					width: 165px;
+				}
+				
+				& .share-type {
+					width: 125px;
+				}
+				
+				& .deal-structure {
+					width: 165px;
+				}
+				
+				& > div {
+					background-color: $purple3;
+				}
+				
+				& > div > div {
 					padding: 8px 12px;
 					height: 40px;
 					font-family: $WS-sb;
@@ -146,14 +69,214 @@
 					font-size: 16px;
 					line-height: 24px;
 					color: $white;
-					background-color: $purple3;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
 				}
 			}
 		}
 	}
 	
-	.table-body2 {
+	& .table-body {
 		& .body-row {
+			&-item {
+				border-top: 4px solid white;
+				border-bottom: 4px solid white;
+				vertical-align: middle;
+				
+				&:first-child > div {
+					border-radius: 6px 0 0 6px;
+				}
+				
+				&:first-child > div > div {
+					text-align: right;
+				}
+				
+				&:last-child > div {
+					border-radius: 0 6px 6px 0;
+				}
+				
+				& .reset-btn {
+					width: 24px;
+					height: 24px;
+					
+					& .tree-dots {
+						display: block;
+					}
+				}
+				
+				&.center > div > div {
+					display: flex;
+					justify-content: center;
+				}
+				
+				&.center > div > div button {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+				
+				& .date {
+					width: 110px;
+				}
+				
+				& .company {
+					width: 190px;
+				}
+				
+				& .valuation {
+					width: 135px;
+				}
+				
+				& .volume {
+					width: 130px;
+				}
+				
+				& .share-price {
+					width: 135px;
+				}
+				
+				& .number-of-shares {
+					width: 165px;
+				}
+				
+				& .share-type {
+					width: 125px;
+				}
+				
+				& .deal-structure {
+					width: 165px;
+				}
+				
+				& > div {
+					background-color: #C6F7CE;
+				}
+				
+				& > div > div {
+					height: 34px;
+					text-align: left;
+					vertical-align: middle;
+					padding: 4px 12px;
+					font-family: $WS-r;
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 24px;
+					color: $purple3;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					
+					& > a {
+						display: inline-block;
+						width: 26px;
+						height: 26px;
+						
+						& > i:before {
+							width: 30px;
+							height: 26px;
+						}
+					}
+				}
+			}
+			
+			&.bid {
+				& > td > div {
+					background-color: #F8D2D2;
+				}
+			}
+			
+			&.moderation {
+				& > td > div {
+					background-color: #C0BCD699;
+				}
+			}
+			
+			&.history {
+				& > td > div {
+					background-color: #C6F6CE99;
+				}
+			}
+		}
+	}
+}
+
+.table-two {
+	width: 100%;
+	min-width: 1380px;
+	
+	& .table-head {
+		& .head-row {
+			&-item {
+				text-align: left;
+				border-left: 1px solid $white;
+				border-right: 1px solid $white;
+				border-top: 4px solid white;
+				border-bottom: 4px solid white;
+				vertical-align: middle;
+				
+				&:first-child div {
+					border-radius: 6px 0 0 6px;
+				}
+				
+				&:last-child div {
+					border-radius: 0 6px 6px 0;
+				}
+				
+				&:first-child > div > div {
+					text-align: right;
+				}
+				
+				& .date-t {
+					width: 185px;
+				}
+				
+				& .transaction-name-t {
+					width: 175px;
+				}
+				
+				& .amount-raised-t {
+					width: 145px;
+				}
+				
+				& .raised-to-date-t {
+					width: 140px;
+				}
+				
+				& .issue-price-t {
+					width: 110px;
+				}
+				
+				& .post-money-valuation-t {
+					width: 195px;
+				}
+				
+				& .key-investors-t {
+					width: 560px;
+				}
+				
+				& > div {
+					background-color: $purple3;
+				}
+				
+				& > div > div {
+					padding: 8px 12px;
+					height: 40px;
+					font-family: $WS-sb;
+					font-weight: 600;
+					font-size: 16px;
+					line-height: 24px;
+					color: $white;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+			}
+		}
+	}
+	
+	& .table-body2 {
+		& .body-row {
+			cursor: pointer;
 			&-item {
 				&:first-child > div {
 					padding-left: 0;
@@ -164,7 +287,7 @@
 				&:last-child > div {
 					
 					&.arrow-icon-purple {
-						cursor: pointer;
+						
 						&:hover {
 							&:before {
 								transform: rotate(-45deg) scale(1.4);
@@ -174,7 +297,37 @@
 					
 				}
 				
-				& > div {
+				& .date-t {
+					width: 185px;
+				}
+				
+				& .transaction-name-t {
+					width: 175px;
+				}
+				
+				& .amount-raised-t {
+					width: 145px;
+				}
+				
+				& .raised-to-date-t {
+					width: 140px;
+				}
+				
+				& .issue-price-t {
+					width: 110px;
+				}
+				
+				& .post-money-valuation-t {
+					width: 195px;
+				}
+				
+				& .key-investors-t {
+					width: 100%;
+					max-width: 736px;
+					min-width: 560px;
+				}
+				
+				& > div > div {
 					height: 32px;
 					text-align: left;
 					vertical-align: middle;
@@ -184,11 +337,15 @@
 					font-size: 16px;
 					line-height: 24px;
 					color: $purple3;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
 				}
 				
 				&:first-child > ul {
-					padding-left: 70px;
+					padding-left: 49px;
 				}
+				
 				&:first-child > ul li div {
 					padding: 4px 0;
 				}
@@ -203,6 +360,7 @@
 				
 				&:last-child {
 					border-radius: 0 6px 0 0;
+					
 					&:hover {
 						& .arrow-icon-purple {
 							&:before {
@@ -210,6 +368,7 @@
 							}
 						}
 					}
+					
 					& .arrow-icon-purple {
 						&:before {
 							transform: rotate(135deg);
@@ -258,7 +417,7 @@
 	border-top: 1px solid #573CDA;
 	
 	&-item {
-		margin-bottom: 25px;
+		margin-bottom: 20px;
 		
 		&:last-child {
 			margin-bottom: 0;

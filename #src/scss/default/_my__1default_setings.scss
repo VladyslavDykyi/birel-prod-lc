@@ -3,6 +3,7 @@ $white2: #F6F4FF;
 
 $grey: #C4C4C4;
 $grey-lite: #C0BCD6;
+$grey2: #A4A4A4;
 
 $purple: #573CDA;
 $purple-hover: #5634F7;
@@ -10,7 +11,7 @@ $purple2: #515994;
 $purple3: #2A206A;
 $purple4: #AB9DEC;
 
-
+$red: #FF3939;
 
 
 $green: #1BC082;
@@ -30,10 +31,11 @@ $box-shadow3: 3px 3px 8px rgba(23, 17, 50, 0.25);
 $box-shadow4: 3px 0px 6px rgba(10, 12, 80, 0.15);
 $box-shadow5: 3px 0px 8px rgba(23, 17, 50, 0.25);
 
-$A-r: "anton-Regular";
-$WS-r: "WorkSans-Regular";
-$WS-m: "WorkSans-Medium";
-$WS-sb: "WorkSans-SemiBold";
+$A-r:"anton-Regular", sans-serif;
+$WS-r:"WorkSans-Regular", sans-serif;
+$WS-m:"WorkSans-Medium", sans-serif;
+$WS-sb:"WorkSans-SemiBold", sans-serif;
+
 
 
 /*---цвета ---*/
@@ -79,9 +81,8 @@ figure {
 }
 
 body.lock {
-	@media screen and (max-width: 1024px) {
-		overflow: hidden;
-	}
+	overflow: hidden;
+
 }
 
 i {
@@ -96,6 +97,7 @@ label {
 .container {
 	position: relative;
 	width: 100%;
+	max-width: 100%;
 	margin: 0 auto;
 	padding: 0 65px;
 	box-sizing: border-box;
@@ -107,7 +109,7 @@ label {
 /*---контейнер сайта ---*/
 .bg-site {
 	background-color: $white;
-	padding: 102px 0 0;
+	padding: 72px 0 0;
 	box-sizing: border-box;
 	@media screen and (max-width: 768px) {
 		padding: 60px 0 60px;
@@ -127,11 +129,18 @@ label {
 .box-container {
 	background-color: $white2;
 	padding-left: 350px;
+	@media screen and (max-width: 1580px) {
+		padding-left: 270px;
+	}
 	@media screen and (max-width: 1024px) {
 		padding-left: 0;
 	}
 }
-
+.disabled-tab,
+.purple1.disabled-tab {
+	color: $grey2;
+	border-color: $grey2;
+}
 #tabs3,
 #tabs2,
 #tabs {
@@ -163,4 +172,19 @@ label {
 			display: block;
 		}
 	}
+}
+.alert.alert-danger {
+	font-family: $WS-r;
+	font-size: 14px;
+	line-height: 16px;
+	color: #ff3939;
+	font-weight: 400;
+}
+
+.invalid-feedback {
+	color: #ff3939;
+	font-size: 14px;
+	line-height: 16px;
+	font-family: $WS-r;
+	font-weight: 400;
 }

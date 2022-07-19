@@ -1,9 +1,12 @@
+import {bindTabs,} from '../default/module-lc.js';
+
+bindTabs('#tabs');
 
 function openMenuTr(container) {
 	if (typeof container === 'string') {
 		container = document.querySelector(container);
 	}
-	const btn = container.querySelectorAll('.arrow-icon-purple');
+	const btn = container.querySelectorAll('.body-row.visible[data-id]');
 	const row = container.querySelectorAll('.visible');
 
 
@@ -28,6 +31,7 @@ function openMenuTr(container) {
 	}
 }
 
+
 openMenuTr('.table-two');
 
 tippy('[data-tippy-content]',
@@ -40,5 +44,17 @@ tippy('[data-tippy-content]',
 		dynamicTitle: true,
 	});
 
+const btn_filter = document.querySelector('.company-philter-btn');
+const btn_filter2 = document.querySelector('.company-philter-btn.h');
+clearFilter(btn_filter);
+clearFilter(btn_filter2);
 
 
+
+function clearFilter(btn) {
+	btn.addEventListener('click', () => {
+		const href_init = document.location.href;
+		let init = href_init.split('?');
+		document.location.href = init[0];
+	})
+}

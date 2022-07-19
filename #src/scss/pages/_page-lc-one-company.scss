@@ -145,7 +145,7 @@
 			
 			&-btn {
 				background-color: $white2;
-				padding: 8px;
+				padding: 5px;
 				display: flex;
 				align-items: center;
 				grid-gap: 8px;
@@ -155,9 +155,13 @@
 				font-size: 16px;
 				line-height: 21px;
 				color: #573CDA;
-				
+				border-radius: 6px;
 				&:hover i:before {
 					transform: scale(1.1);
+				}
+				&-s {
+					height: 40px;
+					border-radius: 6px;
 				}
 			}
 			
@@ -167,7 +171,7 @@
 			margin-top: 70px;
 			
 			& .tab-wrapper {
-				width: 370px;
+				width: 230px;
 				margin-bottom: 55px;
 				@media screen and (max-width: 425px) {
 					width: 100%;
@@ -198,10 +202,10 @@
 					& h2 {
 						margin-bottom: 40px;
 					}
-					& .body-row .body-row-item div {
+					& .body-row .body-row-item > div {
 						background: #DDFAE2;
 					}
-					& .body-row.bid .body-row-item div {
+					& .body-row.bid .body-row-item > div {
 						background: rgba(248, 210, 210, 0.6);
 					}
 				}

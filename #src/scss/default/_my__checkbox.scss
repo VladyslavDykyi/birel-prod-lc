@@ -77,10 +77,10 @@
 	position: relative;
 	display: inline-block;
 	box-sizing: border-box;
-	width: 22px;
-	height: 14px;
+	width: 32px;
+	height: 20px;
 	border: 2px solid $purple;
-	border-radius: 25%/50%;
+	border-radius: 10px;
 	vertical-align: top;
 	background: transparent;
 	transition: .2s;
@@ -95,8 +95,8 @@
 	top: 2px;
 	left: 2px;
 	display: inline-block;
-	width: 6px;
-	height: 6px;
+	width: 12px;
+	height: 12px;
 	border-radius: 50%;
 	background: $purple2;
 	transition: .15s;
@@ -121,8 +121,8 @@
 	background: transparent;
 }
 .checkbox-ios input[type=checkbox]:checked + .checkbox-ios-switch:before {
-	transform:translateX(8px);
-	background: $purple;
+	transform:translateX(12px);
+	background: $green;
 	@media screen and (max-width: 768px) {
 		transform:translateX(17px);
 	}
@@ -155,7 +155,7 @@
 		background: transparent;
 	}
 	& .checkbox-ios input[type=checkbox]:checked + .checkbox-ios-switch:before {
-		background: $purple3;
+		background: $green;
 	}
 	/* Hover */
 	& .checkbox-ios input[type="checkbox"]:not(:disabled) + .checkbox-ios-switch {
@@ -169,5 +169,44 @@
 	}
 	& .checkbox-ios input[type=checkbox]:disabled + .checkbox-ios-switch:before {
 		background: #eee;
+	}
+}
+.checkbox-green {
+	display: inline-flex;
+	align-items: center;
+	grid-gap: 8px;
+	& > [type="checkbox"] {
+		display: none;
+		&:checked + i:before {
+			border: 1px solid $purple;
+		}
+		&:checked + i:after {
+			display: block;
+		}
+	}
+	& > i {
+		display: block;
+		position: relative;
+		width: 18px;
+		height: 18px;
+		&:before {
+			content: '';
+			display: block;
+			width: 16px;
+			height: 16px;
+			border: 1px solid $grey2;
+			border-radius: 4px;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			top: calc(50% - 4.5px);
+			left: calc(50% - 6px);
+			display: none;
+			width: 12px;
+			height: 9px;
+			background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='12' height='9' viewBox='0 0 12 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M11.8539 0.645917C11.9005 0.692363 11.9374 0.747538 11.9626 0.808284C11.9878 0.869029 12.0008 0.93415 12.0008 0.999917C12.0008 1.06568 11.9878 1.13081 11.9626 1.19155C11.9374 1.2523 11.9005 1.30747 11.8539 1.35392L4.8539 8.35392C4.80745 8.40048 4.75228 8.43742 4.69153 8.46263C4.63079 8.48784 4.56567 8.50081 4.4999 8.50081C4.43413 8.50081 4.36901 8.48784 4.30827 8.46263C4.24752 8.43742 4.19234 8.40048 4.1459 8.35392L0.645899 4.85392C0.552012 4.76003 0.499268 4.63269 0.499268 4.49992C0.499268 4.36714 0.552012 4.2398 0.645899 4.14592C0.739786 4.05203 0.867123 3.99929 0.999899 3.99929C1.13267 3.99929 1.26001 4.05203 1.3539 4.14592L4.4999 7.29292L11.1459 0.645917C11.1923 0.599354 11.2475 0.562411 11.3083 0.537205C11.369 0.511998 11.4341 0.499023 11.4999 0.499023C11.5657 0.499023 11.6308 0.511998 11.6915 0.537205C11.7523 0.562411 11.8075 0.599354 11.8539 0.645917Z' fill='%231BC082'/%3e%3c/svg%3e");
+			background-repeat: no-repeat;
+		}
 	}
 }

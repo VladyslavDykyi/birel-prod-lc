@@ -33,8 +33,20 @@
 			<p class="t-r f16-l24 purple2">You can choose deal structure: direct, spv, forward contract or primary
 				round.</p>
 			<textarea class="i-f f14-l16 w400 h235" cols="30" rows="10" placeholder="Placeholder text"></textarea>
+			<ul class="t-r f16-l24 purple2 list-help">
+				<li>
+					- Order will be placed for 45 days, after this period you can update order so that it remains valid for another 45 days (this is available in section my orders).
+				</li>
+				<li>
+					- You can place one order per company.
+				</li>
+				<li>
+					- You can edit the Share price or Valuation once during the first 30 days.
+				</li>
+			</ul>
 		</div>
-		<div class="ask-block i" id="tabs2-bid">
+		
+		<div class="ask-block i" id="tabs_bid">
 			<h2 class="t-sb f22-l25 purple3">Информация</h2>
 			<ul class="nav-tabs ">
 				<li class="t-m f18-l32 purple1 tab-n2 active">
@@ -80,6 +92,10 @@
 				<div class="ask-block-info">
 					<label class="t-r f16-l24 purple1" for="volume-bid">Volume</label>
 					<input class="i-f w400" type="text" id="volume-bid" placeholder="Высчитывается автоматически">
+					<button class="btn-green w265" type="button" id="btn-calc-bid">
+						Calculate
+					</button>
+					<div class=" t-r f14-l16 red error"></div>
 				</div>
 			</div>
 			<div class="content-t2">

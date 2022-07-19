@@ -4,8 +4,8 @@
           box-shadow: 3px 0px 6px rgba(10, 12, 80, 0.15);
   width: 350px;
   min-width: 350px;
-  height: -webkit-calc(100vh - 102px);
-  height: calc(100vh - 102px);
+  height: -webkit-calc(100vh - 72px);
+  height: calc(100vh - 72px);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -202,7 +202,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  font-family: "WorkSans-Regular";
+  font-family: "WorkSans-Regular", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -287,6 +287,31 @@
   border-top: 1px solid #573CDA;
 }
 
+@media screen and (max-width: 1580px) {
+  .sidebar {
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 270px;
+    min-width: 270px;
+  }
+
+  .sidebar-nav {
+    padding: 20px 20px 50px 20px;
+  }
+
+  .sidebar-btn {
+    padding: 15px 20px;
+  }
+
+  .sidebar-btn.grey {
+    padding: 15px 20px;
+  }
+
+  .sidebar-list {
+    padding: 15px 20px;
+  }
+}
+
 @media screen and (max-width: 1540px) {
   .edit {
     padding: 35px 25px;
@@ -296,8 +321,8 @@
 @media screen and (max-width: 1024px) {
   .sidebar {
     display: none;
-    height: -webkit-calc(100vh - 120px);
-    height: calc(100vh - 120px);
+    height: -webkit-calc(100vh - 135px);
+    height: calc(100vh - 135px);
     width: 100vw;
     min-width: 100vw;
     overflow-x: hidden;
@@ -357,6 +382,11 @@
 }
 
 @media screen and (max-width: 768px) {
+  .sidebar {
+    height: -webkit-calc(100vh - 120px);
+    height: calc(100vh - 120px);
+  }
+
   .edit {
     padding: 35px 20px;
   }

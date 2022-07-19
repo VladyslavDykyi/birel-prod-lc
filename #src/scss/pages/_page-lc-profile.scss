@@ -4,9 +4,8 @@
         "conent1 conent2"
         "conent1 conent3";
 	grid-template-columns: 550px calc(100% - 550px);
-	//grid-template-rows: 597px 597px;
 	background-color: $white2;
-	height: calc(100vh - 102px);
+	height: calc(100vh - 72px);
 	@media screen and (max-height: 898px) {
 		height: auto;
 	}

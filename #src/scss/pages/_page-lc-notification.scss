@@ -1,0 +1,49 @@
+.add {
+	display: flex;
+	height: calc(100vh - 102px);
+	@media screen and (max-height: 1024px) {
+			width: 100%
+	}
+	@media screen and (max-height: 890px) {
+			height:auto
+	}
+}
+
+.content-box {
+	padding: 40px 65px 0;
+	background-color: $white;
+	max-width: 550px;
+	width: auto;
+	min-width: 350px;
+	@media screen and (max-width: 1400px) {
+		width: auto;
+		padding: 40px 20px 80px 20px;
+	}
+	@media screen and (max-width: 768px) {
+		max-width: 100%;
+		min-width: 320px;
+		padding: 40px 15px 40px 15px;
+	}
+}
+.notification-cont {
+	&-content {
+		margin-top: 40px;
+	}
+	&-title {
+	
+	}
+	&-form {
+		margin-top: 5px;
+	}
+	&-item {
+		margin-top: 25px;
+	}
+	&-btn {
+		margin-top: 160px;
+		padding-bottom: 50px;
+		@media screen and (max-width: 580px) {
+			margin-top: 40px;
+			padding-bottom: 20px;
+		}
+	}
+}

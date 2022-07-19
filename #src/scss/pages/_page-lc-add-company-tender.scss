@@ -1,0 +1,238 @@
+.tender {
+	display: grid;
+	grid-template-areas:
+		"name specification"
+		"company specification"
+		"order data"
+		"structure data"
+		"info fix";
+	grid-template-columns: 0.4fr 0.6fr;
+	grid-gap: 0 20px;
+	margin-top: 50px;
+	@media screen and (max-width: 768px) {
+		grid-gap: 0 5px;
+	}
+	@media screen and (max-width: 580px) {
+		grid-template-areas:
+			"name"
+			"company"
+			"order"
+			"structure"
+			"specification"
+			"data"
+			"info";
+		grid-template-columns: 1fr;
+		margin-top: 30px;
+	}
+	
+	& .w400 {
+		@media screen and (max-width: 1170px) {
+			width: 300px;
+		}
+		@media screen and (max-width: 1024px) {
+			width: 400px;
+		}
+		@media screen and (max-width: 880px) {
+			width: 300px;
+		}
+		@media screen and (max-width: 680px) {
+			width: 235px;
+		}
+	}
+	
+	& .h235 {
+		@media screen and (max-width: 580px) {
+			height: 150px;
+		}
+	}
+	
+	& .c-n {
+		grid-area: name;
+		& .tender-block-inp {
+			margin-bottom: 20px;
+			@media screen and (max-width: 580px) {
+				max-width: 100%;
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
+			& > label {
+				margin-bottom: 8px;
+				display: inline-block;
+			}
+		}
+		
+	}
+	
+	& .o {
+		grid-area: order;
+		
+		& .wrapper-radio3 {
+			margin-top: 8px;
+			display: flex;
+			align-items: center;
+			grid-gap: 15px;
+		}
+	}
+	& .n-c {
+		grid-area: company;
+		& input {
+			margin-top: 8px;
+		}
+	}
+	& .d-s {
+		grid-area: structure;
+	}
+	
+	& .s {
+		grid-area: specification;
+	}
+	
+	& .i {
+		grid-area: info;
+		
+		& .nav-tabs {
+			width: 170px;
+		}
+	}
+	& .d-r {
+		grid-area: data;
+		& .date-wrapper {
+			margin-top: 20px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			& input {
+				color: $purple;
+				@media screen and (max-width: 650px) {
+					font-size: 12px;
+					line-height: 16px;
+				}
+				&.w170 {
+					@media screen and (max-width: 768px) {
+						width: 150px;
+						padding: 3px;
+					}
+					@media screen and (max-width: 650px) {
+						width: 130px;
+					}
+					@media screen and (max-width: 580px) {
+						width: 140px;
+						
+					}
+				}
+			}
+		}
+	}
+	&-block {
+		max-width: 400px;
+		margin-bottom: 40px;
+		position: relative;
+		@media screen and (max-width: 580px) {
+			max-width: 100%;
+			margin-bottom: 25px;
+		}
+		
+		& > .nav-tabs {
+			margin: 7px 0 20px;
+		}
+		
+		& > p {
+			margin: 7px 0 20px;
+		}
+		
+		//&-link {
+		//	grid-area: link;
+		//	padding: 5px;
+		//	width: 260px;
+		//	height: 42px;
+		//	background: #F6F4FF;
+		//	border-radius: 6px;
+		//	@media screen and (max-width: 1470px) {
+		//		margin-top: 10px;
+		//	}
+		//	@media screen and (max-width: 580px) {
+		//		width: 100%;
+		//		margin-top: 15px;
+		//	}
+		//
+		//	& p {
+		//		display: flex;
+		//		align-items: center;
+		//		grid-gap: 12px;
+		//
+		//		& a:hover i:before {
+		//			transform: scale(1.1);
+		//		}
+		//
+		//		& i:before {
+		//			width: 31px;
+		//			height: 31px;
+		//
+		//		}
+		//	}
+		//}
+		
+		&-info {
+			display: flex;
+			flex-direction: column;
+			max-width: max-content;
+			position: relative;
+			margin-bottom: 20px;
+			@media screen and (max-width: 580px) {
+				max-width: 100%;
+			}
+			
+			&:last-child {
+				margin-bottom: 0;
+			}
+			
+			& > label {
+				margin-bottom: 8px;
+			}
+			& .wrapper-radio {
+				display: flex;
+				align-items: center;
+				grid-gap: 10px;
+				position: absolute;
+				right: 0;
+				top: 0;
+				z-index: 1;
+			}
+		}
+	}
+	
+	&-prompt {
+		position: absolute;
+		right: -290px;
+		bottom: 0;
+		width: 260px;
+	}
+}
+.daterangepicker {
+	border-color: $purple;
+	&:before {
+		border-bottom-color: $purple;
+	}
+	&.show-calendar .drp-buttons {
+		border-top-color: $purple;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		& button {
+			width: 100px;
+			height: 30px;
+			margin: 0;
+		}
+	}
+}
+.daterangepicker td.active, .daterangepicker td.active:hover {
+	background-color: $purple;
+	border-color: transparent;
+	color: #fff;
+}
+#tabs .nav-tabs .f18-l32, #tabs2 .nav-tabs .f18-l32 {
+	font-size: 16px;
+	line-height: 32px;
+}

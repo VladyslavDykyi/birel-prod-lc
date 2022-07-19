@@ -4,8 +4,8 @@
           box-shadow: 3px 0px 6px rgba(10, 12, 80, 0.15);
   width: 350px;
   min-width: 350px;
-  height: -webkit-calc(100vh - 102px);
-  height: calc(100vh - 102px);
+  height: -webkit-calc(100vh - 72px);
+  height: calc(100vh - 72px);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -159,8 +159,8 @@
   grid-template-columns: 550px -webkit-calc(100% - 550px);
   grid-template-columns: 550px calc(100% - 550px);
   background-color: #F6F4FF;
-  height: -webkit-calc(100vh - 102px);
-  height: calc(100vh - 102px);
+  height: -webkit-calc(100vh - 72px);
+  height: calc(100vh - 72px);
 }
 
 .content-box {
@@ -247,6 +247,31 @@
   width: 400px;
 }
 
+@media screen and (max-width: 1580px) {
+  .sidebar {
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 270px;
+    min-width: 270px;
+  }
+
+  .sidebar-nav {
+    padding: 20px 20px 50px 20px;
+  }
+
+  .sidebar-btn {
+    padding: 15px 20px;
+  }
+
+  .sidebar-btn.grey {
+    padding: 15px 20px;
+  }
+
+  .sidebar-list {
+    padding: 15px 20px;
+  }
+}
+
 @media screen and (max-width: 1400px) {
   .content {
     grid-template-columns: 340px -webkit-calc(100% - 330px);
@@ -271,8 +296,8 @@
 @media screen and (max-width: 1024px) {
   .sidebar {
     display: none;
-    height: -webkit-calc(100vh - 120px);
-    height: calc(100vh - 120px);
+    height: -webkit-calc(100vh - 135px);
+    height: calc(100vh - 135px);
     width: 100vw;
     min-width: 100vw;
     overflow-x: hidden;
@@ -341,6 +366,11 @@
 }
 
 @media screen and (max-width: 768px) {
+  .sidebar {
+    height: -webkit-calc(100vh - 120px);
+    height: calc(100vh - 120px);
+  }
+
   .content {
     height: auto;
     grid-template-areas: "conent1" "conent2";

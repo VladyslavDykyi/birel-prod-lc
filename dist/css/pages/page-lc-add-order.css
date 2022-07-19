@@ -4,8 +4,8 @@
           box-shadow: 3px 0px 6px rgba(10, 12, 80, 0.15);
   width: 350px;
   min-width: 350px;
-  height: -webkit-calc(100vh - 102px);
-  height: calc(100vh - 102px);
+  height: -webkit-calc(100vh - 72px);
+  height: calc(100vh - 72px);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -170,7 +170,7 @@
 
 .ask {
   display: grid;
-  grid-template-areas: "name specification" "structure specification" "info fix";
+  grid-template-areas: "name specification" "structure specification" "info specification";
   grid-template-columns: 0.5fr 0.5fr;
   grid-gap: 0 20px;
   margin-top: 50px;
@@ -228,7 +228,7 @@
 .ask-block-link {
   grid-area: link;
   padding: 5px;
-  width: 255px;
+  width: 260px;
   height: 42px;
   background: #F6F4FF;
   -webkit-border-radius: 6px;
@@ -277,9 +277,61 @@
 
 .ask-block-info:last-child {
   margin-bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.ask-block-info .wrapper-radio {
+.ask-block-info:last-child > label {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 100%;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+  margin-bottom: 8px;
+}
+
+.ask-block-info:last-child > input {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 60%;
+      -ms-flex: 0 1 60%;
+          flex: 0 1 60%;
+}
+
+.ask-block-info:last-child > button {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 30%;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
+  height: 38px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+
+.ask-block-info:last-child > div {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 100%;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+}
+
+.ask-block-info > label {
+  margin-bottom: 8px;
+}
+
+.ask-block .wrapper-radio {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -295,13 +347,47 @@
   z-index: 1;
 }
 
-.ask-block-info > label {
+.ask-block > label {
   margin-bottom: 8px;
+}
+
+.ask .content-t2:last-child .ask-block-info:last-child {
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.ask .content-t2:last-child .ask-block-info:last-child > label {
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
+}
+
+.ask .content-t2:last-child .ask-block-info:last-child > input {
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none;
 }
 
 .looking {
   display: grid;
-  grid-template-areas: "name specification" "order specification" "structure specification" "info fix";
+  grid-template-areas: "name specification" "order specification" "structure specification" "info specification";
   grid-template-columns: 0.5fr 0.5fr;
   grid-gap: 0 20px;
   margin-top: 50px;
@@ -377,7 +463,7 @@
 .looking-block-link {
   grid-area: link;
   padding: 5px;
-  width: 255px;
+  width: 260px;
   height: 42px;
   background: #F6F4FF;
   -webkit-border-radius: 6px;
@@ -441,7 +527,7 @@
 
 .tender {
   display: grid;
-  grid-template-areas: "name specification" "company specification" "order specification" "structure data" "info fix";
+  grid-template-areas: "name specification" "company specification" "order specification" "structure data" "info data";
   grid-template-columns: 0.5fr 0.5fr;
   grid-gap: 0 20px;
   margin-top: 50px;
@@ -552,7 +638,7 @@
 .tender-block-link {
   grid-area: link;
   padding: 5px;
-  width: 255px;
+  width: 260px;
   height: 42px;
   background: #F6F4FF;
   -webkit-border-radius: 6px;
@@ -607,6 +693,22 @@
   margin-bottom: 8px;
 }
 
+.tender-block .wrapper-radio {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
 .tender-prompt {
   position: absolute;
   right: -290px;
@@ -657,6 +759,39 @@
   line-height: 32px;
 }
 
+.list-help {
+  padding: 10px;
+  background: #F6F4FF;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1580px) {
+  .sidebar {
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 270px;
+    min-width: 270px;
+  }
+
+  .sidebar-nav {
+    padding: 20px 20px 50px 20px;
+  }
+
+  .sidebar-btn {
+    padding: 15px 20px;
+  }
+
+  .sidebar-btn.grey {
+    padding: 15px 20px;
+  }
+
+  .sidebar-list {
+    padding: 15px 20px;
+  }
+}
+
 @media screen and (max-width: 1540px) {
   .add-order {
     padding: 35px 25px;
@@ -664,10 +799,6 @@
 }
 
 @media screen and (max-width: 1470px) {
-  .ask .w400 {
-    width: 300px;
-  }
-
   .ask .c-n {
     grid-template-areas: "title fix" "text fix" "select fix" "link fix";
   }
@@ -676,20 +807,12 @@
     margin-top: 10px;
   }
 
-  .looking .w400 {
-    width: 300px;
-  }
-
   .looking .c-n {
     grid-template-areas: "title fix" "text fix" "select fix" "link fix";
   }
 
   .looking-block-link {
     margin-top: 10px;
-  }
-
-  .tender .w400 {
-    width: 300px;
   }
 
   .tender .c-n {
@@ -701,11 +824,25 @@
   }
 }
 
+@media screen and (max-width: 1170px) {
+  .ask .w400 {
+    width: 300px;
+  }
+
+  .looking .w400 {
+    width: 300px;
+  }
+
+  .tender .w400 {
+    width: 300px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .sidebar {
     display: none;
-    height: -webkit-calc(100vh - 120px);
-    height: calc(100vh - 120px);
+    height: -webkit-calc(100vh - 135px);
+    height: calc(100vh - 135px);
     width: 100vw;
     min-width: 100vw;
     overflow-x: hidden;
@@ -791,6 +928,11 @@
 }
 
 @media screen and (max-width: 768px) {
+  .sidebar {
+    height: -webkit-calc(100vh - 120px);
+    height: calc(100vh - 120px);
+  }
+
   .add-order {
     padding: 35px 20px;
   }

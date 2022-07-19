@@ -38,8 +38,19 @@
 			<p class="t-r f16-l24 purple2">You can choose deal structure: direct, spv, forward contract or primary
 				round.</p>
 			<textarea class="i-f f14-l16 w400 h235" cols="30" rows="10" placeholder="Placeholder text"></textarea>
+			<ul class="t-r f16-l24 purple2 list-help">
+				<li>
+					- Order will be placed for 45 days, after this period you can update order so that it remains valid for another 45 days (this is available in section my orders).
+				</li>
+				<li>
+					- You can place one order per company.
+				</li>
+				<li>
+					- You can edit the Share price or Valuation once during the first 30 days.
+				</li>
+			</ul>
 		</div>
-		<div class="ask-block i" id="tabs2">
+		<div class="ask-block i" id="tabs_ask">
 			<h2 class="t-sb f22-l25 purple3">Information</h2>
 			<ul class="nav-tabs ">
 				<li class="t-m f18-l32 purple1 tab-n2 active">
@@ -51,10 +62,10 @@
 			</ul>
 			<div class="content-t2 active">
 				<div class="ask-block-info">
-					<label class="t-r f16-l24 purple1" for="share_type">
+					<label class="t-r f16-l24 purple1" for="share_type_ask">
 						Share Type
 					</label>
-					<select id="share_type" name="share_type" class="js-example-basic-single w400" required>
+					<select id="share_type_ask" name="share_type_ask" class="js-example-basic-single w400" required>
 						<option value="0" disabled selected>Choose</option>
 						<option value="1" >Preferred</option>
 						<option value="2" >Common</option>
@@ -65,45 +76,49 @@
 					<div class="wrapper-radio">
 						<div class="form_radio">
 							<label class="t-r f14-l16 purple1">
-								<input type="radio" id="share_type_currency1" name="share_type_currency" value="usd" required checked>
+								<input type="radio" id="share_type_currency_ask1" name="share_type_currency" value="usd" required checked>
 								<span></span>
 								$
 							</label>
 						</div>
 						<div class="form_radio">
 							<label class="t-r f14-l16 purple1">
-								<input type="radio" id="share_type_currency2" name="share_type_currency" value="eur" required>
+								<input type="radio" id="share_type_currency_ask2" name="share_type_currency" value="eur" required>
 								<span></span>
 								€
 							</label>
 						</div>
 					</div>
-					<label class="t-r f16-l24 purple1" for="share_price">Share Price</label>
-					<input class="i-f w400 m-bid" type="text" id="share_price" name="share_price" placeholder="Placeholder price" required>
+					<label class="t-r f16-l24 purple1" for="share_price_ask">Share Price</label>
+					<input class="i-f w400 m-bid" type="text" id="share_price_ask" name="share_price" placeholder="Placeholder price" required>
 				</div>
 				<div class="ask-block-info">
-					<label class="t-r f16-l24 purple1" for="share_number">Share Number</label>
-					<input class="i-f w400 m-bid" type="text" id="share_number" name="share_number" placeholder="Placeholder number" required>
+					<label class="t-r f16-l24 purple1" for="share_number_ask">Share Number</label>
+					<input class="i-f w400 m-bid" type="text" id="share_number_ask" name="share_number" placeholder="Placeholder number" required>
 				</div>
 				<div class="ask-block-info">
-					<label class="t-r f16-l24 purple1" for="volume">Volume</label>
-					<input class="i-f w400" type="text" id="volume" name="volume" placeholder="Placeholder" required>
+					<label class="t-r f16-l24 purple1" for="volume_ask">Volume</label>
+					<input class="i-f w400" type="text" id="volume_ask" name="volume" placeholder="Placeholder" required>
+					<button class="btn-green w265" type="button" id="btn_calc_ask">
+						Calculate
+					</button>
+					<div class=" t-r f14-l16 red error"></div>
 				</div>
 			</div>
 			<div class="content-t2">
 				<div class="ask-block-info">
-					<label class="t-r f16-l24 purple1" for="share_type2">Share Type</label>
-					<select id="share_type2" class="js-example-basic-single w400">
+					<label class="t-r f16-l24 purple1" for="share_type_ask2">Share Type</label>
+					<select id="share_type_ask2" class="js-example-basic-single w400">
 						<option value="0" selected>Choose</option>
 					</select>
 				</div>
 				<div class="ask-block-info">
-					<label class="t-r f16-l24 purple1" for="volume2">Volume</label>
-					<input class="i-f w400" type="text" id="volume2" placeholder="Placeholder">
+					<label class="t-r f16-l24 purple1" for="volume_ask2">Volume</label>
+					<input class="i-f w400" type="text" id="volume_ask2" placeholder="Placeholder">
 				</div>
 				<div class="ask-block-info">
-					<label class="t-r f16-l24 purple1" for="share_number2">Valuation</label>
-					<input class="i-f w400" type="text" id="share_number2" placeholder="Placeholder">
+					<label class="t-r f16-l24 purple1" for="share_number_ask2">Valuation</label>
+					<input class="i-f w400" type="text" id="share_number_ask2" placeholder="Placeholder">
 				</div>
 			</div>
 		</div>

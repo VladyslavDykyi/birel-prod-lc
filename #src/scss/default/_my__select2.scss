@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 	padding: 10px 20px 10px 10px;
 	height: 40px;
-	border-radius: 0;
+	border-radius: 6px;
 	transition: all 0.2s linear;
 }
 .select2-container--my .select2-selection--single .select2-selection__arrow {
@@ -37,6 +37,20 @@
 }
 .select2-container--my .select2-dropdown {
 	border-color:  $purple4;
+	max-height: 220px;
+	overflow: auto;
+	&::-webkit-scrollbar {
+		background: $white2;
+		border-radius: 8px;
+		width: 7px;
+		height: 8px;
+		
+	}
+	&::-webkit-scrollbar-thumb {
+		background: rgba(192, 188, 214, 0.6);
+		border-radius: 6px;
+		height: 8px;
+	}
 	& .select2-search__field {
 		border-color:  $purple4;
 	}

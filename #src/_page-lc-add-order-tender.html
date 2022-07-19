@@ -56,6 +56,7 @@
 			<p class="t-r f16-l24 purple2">You can choose deal structure: direct, spv, forward contract or primary
 				round.</p>
 			<textarea class="i-f f14-l16 w400 h235" placeholder="Placeholder text"></textarea>
+			
 		</div>
 		<div class="tender-block d-r" >
 			<h2 class="t-sb f22-l25 purple3">Срок тендера</h2>
@@ -63,6 +64,17 @@
 				<input class="i-f w170" type="text" name="datetimes">
 				<input class="i-f w170" type="text" name="datetimes">
 			</div>
+			<ul class="t-r f16-l24 purple2 list-help">
+				<li>
+					- Order will be placed for 45 days, after this period you can update order so that it remains valid for another 45 days (this is available in section my orders).
+				</li>
+				<li>
+					- You can place one order per company.
+				</li>
+				<li>
+					- You can edit the Share price or Valuation once during the first 30 days.
+				</li>
+			</ul>
 		</div>
 		<div class="tender-block i" id="tabs2-tender">
 			<h2 class="t-sb f22-l25 purple3">Информация</h2>
@@ -75,7 +87,7 @@
 				</li>
 			</ul>
 			<div class="content-t2 active">
-				<div class="ask-block-info">
+				<div class="tender-block-info">
 					<label class="t-r f16-l24 purple1" for="share_type4">
 						Share Type
 					</label>
@@ -83,7 +95,7 @@
 						<option value="0" selected>Choose</option>
 					</select>
 				</div>
-				<div class="ask-block-info">
+				<div class="tender-block-info">
 					<div class="wrapper-radio">
 						<div class="form_radio">
 							<label class="t-r f14-l16 purple1">
@@ -103,23 +115,23 @@
 					<label class="t-r f16-l24 purple1" for="share_price4">Start Share Price</label>
 					<input class="i-f w400" type="text" id="share_price4" placeholder="Placeholder price">
 				</div>
-				<div class="ask-block-info">
+				<div class="tender-block-info">
 					<label class="t-r f16-l24 purple1" for="share_number4">Number of Share</label>
 					<input class="i-f w400" type="text" id="share_number4" placeholder="Placeholder number">
 				</div>
 			</div>
 			<div class="content-t2">
-				<div class="ask-block-info">
+				<div class="tender-block-info">
 					<label class="t-r f16-l24 purple1" for="share_type24">Share Type</label>
 					<select id="share_type24" class="js-example-basic-single w400">
 						<option value="0" selected>Choose</option>
 					</select>
 				</div>
-				<div class="ask-block-info">
+				<div class="tender-block-info">
 					<label class="t-r f16-l24 purple1" for="volume24">Block Volume</label>
 					<input class="i-f w400" type="text" id="volume24" placeholder="Высчитывается автоматически">
 				</div>
-				<div class="ask-block-info">
+				<div class="tender-block-info">
 					<label class="t-r f16-l24 purple1" for="share_number24">Valuation Start</label>
 					<input class="i-f w400" type="text" id="share_number24" placeholder="Placeholder number">
 				</div>

@@ -1,15 +1,15 @@
 .orders-wrapper {
-	padding: 50px 100px 50px 65px;
+	padding: 50px 50px 50px 65px;
 	width: 100%;
 	background-color: $white;
 	@media screen and (max-width: 1540px) {
-		padding: 35px 100px 35px 25px;
+		padding: 35px 35px 35px 25px;
 	}
 	@media screen and (max-width: 1024px) {
-		padding: 45px 40px 35px 40px;
+		padding: 45px 25px 35px 25px;
 	}
 	@media screen and (max-width: 768px) {
-		padding: 35px 25px;
+		padding: 35px 20px;
 	}
 	@media screen and (max-width: 580px) {
 		padding: 25px 15px 25px 15px;
@@ -27,31 +27,30 @@
 			}
 		}
 	}
-	
 	& .orders-philter {
 		display: flex;
 		align-items: center;
 		flex-direction: row;
 		flex-wrap: wrap;
 		grid-gap: 80px;
-		@media screen and (max-width: 1085px) {
-			grid-gap: 20px;
+		@media screen and (max-width: 1280px) {
+			grid-gap: 12px;
 		}
-		
+		@media screen and (max-width: 768px) {
+			grid-gap: 10px;
+		}
 		&-select {
 			width: 190px;
 			@media screen and (max-width: 425px) {
 				width: 100%;
 			}
-			
 			& .select2-container {
 				width: 100% !important;
 			}
 		}
-		
 		&-btn {
 			background-color: $white2;
-			padding: 8px;
+			padding: 5px;
 			display: flex;
 			align-items: center;
 			grid-gap: 8px;
@@ -61,9 +60,13 @@
 			font-size: 16px;
 			line-height: 21px;
 			color: #573CDA;
-			
+			border-radius: 6px;
 			&:hover i:before {
 				transform: scale(1.1);
+			}
+			&-s {
+				height: 40px;
+				border-radius: 6px;
 			}
 		}
 	}
@@ -76,7 +79,6 @@
 			border-radius: 8px;
 			width: 7px;
 			height: 8px;
-			
 		}
 		&::-webkit-scrollbar-thumb {
 			background: rgba(192, 188, 214, 0.6);

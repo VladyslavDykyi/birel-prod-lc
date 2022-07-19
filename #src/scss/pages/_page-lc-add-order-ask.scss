@@ -3,7 +3,7 @@
 	grid-template-areas:
 		"name specification"
 		"structure specification"
-		"info fix";
+		"info specification";
 	grid-template-columns: 0.5fr 0.5fr;
 	grid-gap: 0 20px;
 	margin-top: 50px;
@@ -16,8 +16,9 @@
 		grid-template-columns: 1fr;
 		margin-top: 30px;
 	}
+	
 	& .w400 {
-		@media screen and (max-width: 1470px) {
+		@media screen and (max-width: 1170px) {
 			width: 300px;
 		}
 		@media screen and (max-width: 1024px) {
@@ -30,11 +31,13 @@
 			width: 235px;
 		}
 	}
+	
 	& .h235 {
 		@media screen and (max-width: 580px) {
 			height: 150px;
 		}
 	}
+	
 	& .c-n {
 		grid-area: name;
 		max-width: 680px;
@@ -60,12 +63,15 @@
 			grid-template-columns: 100%;
 			max-width: 580px;
 		}
+		
 		& > h2 {
 			grid-area: title;
 		}
+		
 		& > p {
 			grid-area: text;
 		}
+		
 		& > .select {
 			grid-area: select;
 		}
@@ -94,16 +100,19 @@
 			max-width: 100%;
 			margin-bottom: 25px;
 		}
+		
 		& > .nav-tabs {
 			margin: 7px 0 20px;
 		}
+		
 		& > p {
-			margin:7px 0 20px;
+			margin: 7px 0 20px;
 		}
+		
 		&-link {
 			grid-area: link;
 			padding: 5px;
-			width: 255px;
+			width: 260px;
 			height: 42px;
 			background: #F6F4FF;
 			border-radius: 6px;
@@ -114,19 +123,23 @@
 				width: 100%;
 				margin-top: 15px;
 			}
+			
 			& p {
 				display: flex;
 				align-items: center;
 				grid-gap: 12px;
+				
 				& a:hover i:before {
 					transform: scale(1.1);
 				}
+				
 				& i:before {
 					width: 31px;
 					height: 31px;
 				}
 			}
 		}
+		
 		&-info {
 			display: flex;
 			flex-direction: column;
@@ -136,22 +149,72 @@
 			@media screen and (max-width: 580px) {
 				max-width: 100%;
 			}
+			
 			&:last-child {
 				margin-bottom: 0;
-			}
-			& .wrapper-radio {
 				display: flex;
-				align-items: center;
-				grid-gap: 10px;
-				position: absolute;
-				right: 0;
-				top: 0;
-				z-index: 1;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				
+				& > label {
+					flex: 0 1 100%;
+					margin-bottom: 8px;
+				}
+				
+				& > input {
+					flex: 0 1 60%;
+				}
+				
+				& > button {
+					flex: 0 1 30%;
+					height: 38px;
+					border-radius: 5px;
+				}
+				& > div {
+					flex: 0 1 100%;
+				}
 			}
 			& > label {
 				margin-bottom: 8px;
 			}
 		}
+		
+		& .wrapper-radio {
+			display: flex;
+			align-items: center;
+			grid-gap: 10px;
+			position: absolute;
+			right: 0;
+			top: 0;
+			z-index: 1;
+		}
+		
+		& > label {
+			margin-bottom: 8px;
+		}
+	}
+	
+	& .content-t2:last-child {
+		& .ask-block-info {
+			&:last-child {
+				margin-bottom: 0;
+				display: flex;
+				flex-direction: column;
+				flex-wrap: nowrap;
+				justify-content: flex-start;
+				
+				& > label {
+					flex: none;
+				}
+				
+				& > input {
+					flex: none;
+				}
+			}
+		}
 	}
 }
+
+
 

@@ -26,10 +26,10 @@ $box-shadow3: 3px 3px 8px rgba(23, 17, 50, 0.25);
 $box-shadow4: 3px 0px 6px rgba(10, 12, 80, 0.15);
 $box-shadow5: 3px 0px 8px rgba(23, 17, 50, 0.25);
 
-$A-r: "anton-Regular";
-$WS-r: "WorkSans-Regular";
-$WS-m: "WorkSans-Medium";
-$WS-sb: "WorkSans-SemiBold";
+$A-r:"anton-Regular", sans-serif;
+$WS-r:"WorkSans-Regular", sans-serif;
+$WS-m:"WorkSans-Medium", sans-serif;
+$WS-sb:"WorkSans-SemiBold", sans-serif;
 
 @import "./_sidebar";
 @import "./_page-lc-message";

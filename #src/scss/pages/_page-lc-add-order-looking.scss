@@ -4,7 +4,7 @@
 		"name specification"
 		"order specification"
 		"structure specification"
-		"info fix";
+		"info specification";
 	grid-template-columns: 0.5fr 0.5fr;
 	grid-gap: 0 20px;
 	margin-top: 50px;
@@ -20,7 +20,7 @@
 	}
 	
 	& .w400 {
-		@media screen and (max-width: 1470px) {
+		@media screen and (max-width: 1170px) {
 			width: 300px;
 		}
 		@media screen and (max-width: 1024px) {
@@ -128,7 +128,7 @@
 		&-link {
 			grid-area: link;
 			padding: 5px;
-			width: 255px;
+			width: 260px;
 			height: 42px;
 			background: #F6F4FF;
 			border-radius: 6px;
